@@ -58,7 +58,7 @@ Tài liệu này đặc tả chi tiết kiến trúc điều hướng ứng dụ
 +-------------------------------------------------+
 ```
 
-#### 2.1.2 Drawer Sidebar dành cho Quản trị viên / Admin (Figma: Ảnh 3 - Màn 1)
+#### 2.1.2 Drawer Sidebar dành cho Quản trị viên / Admin (Figma: Ảnh chụp màn 3)
 ```
 +-------------------------------------------------+
 |  +----------------------------------+           |
@@ -70,19 +70,20 @@ Tài liệu này đặc tả chi tiết kiến trúc điều hướng ứng dụ
 |                                                 |
 |  Thảo luận                                      |
 |                                                 |
-|  Nhân viên                                      |
+|  +----------------------------------+           |
+|  |  Nhân viên (Active - Cam)        |           |
+|  +----------------------------------+           |
 |                                                 |
 |  Dự án                                          |
 |                                                 |
 |  Ngày nghỉ                                      |
 |                                                 |
-|  +----------------------------------+           |
-|  |  Chấm công (Active)              |           |
-|  +----------------------------------+           |
+|  Chấm công                                      |
 |                                                 |
 |  [Đăng xuất]                                    |
 +-------------------------------------------------+
 ```
+> Khi người dùng bấm chọn mục **"Nhân viên"**, menu được highlight nền cam và hệ thống điều hướng trực tiếp sang phân hệ **Danh bạ Cư dân VMO** (Xem chi tiết tại [SRS_Danh_Ba_Nhan_Vien_Cu_Dan_VMO.md](file:///Users/hoangkien/project/erp/SRS_Danh_Ba_Nhan_Vien_Cu_Dan_VMO.md)).
 
 ### 2.2 Quy tắc phân quyền hiển thị Menu (RBAC Policy)
 * **Nhân viên thông thường (`EMPLOYEE`):** Hiển thị danh mục tiêu chuẩn và màn hình Dashboard Chấm công với 7 thẻ chức năng cơ bản.
