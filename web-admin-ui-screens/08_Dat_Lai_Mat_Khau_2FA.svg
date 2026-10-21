@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <g>
+        <rect x="180" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="240.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Tổng quan</text>
+      </g>
+      <text x="369.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Nhân viên</text>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản trị Hệ thống &gt; Bảo mật &amp; Quản lý Xác thực 2 bước (2FA)</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <rect x="32" y="115" width="1376" height="850" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="32" y="115" width="1376" height="48" fill="#F6F8FB" rx="12"/>
+  <text x="52" y="145" font-size="14" font-weight="bold" fill="#1E293B">QUẢN LÝ BẢO MẬT: THIẾT LẬP MẬT KHẨU &amp; RESET 2FA CHO NHÂN SỰ</text>
+
+  <!-- Left: Reset Action Card -->
+  <rect x="52" y="185" width="480" height="500" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="72" y="215" font-size="13" font-weight="bold" fill="#1E293B">CẤP LẠI MẬT KHẨU / RESET KHÓA 2FA</text>
+  
+  <text x="72" y="255" font-size="12" fill="#6F7E95">Nhập Email hoặc Mã nhân sự cần hỗ trợ:</text>
+  <rect x="72" y="270" width="440" height="42" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="90" y="296" font-size="13" fill="#1E293B">ian.chesnut@vmo-group.com</text>
+
+  <rect x="72" y="335" width="440" height="90" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="88" y="360" font-size="12" font-weight="bold" fill="#1E293B">Ian Chesnut (0123) - PM Số 18</text>
+  <text x="88" y="380" font-size="11" fill="#6F7E95">Trạng thái 2FA: Kích hoạt ngày 14/02/2026 (TOTP)</text>
+  <text x="88" y="400" font-size="11" fill="#2E7D32">Số lần đăng nhập sai 24h qua: 0/5 (An toàn)</text>
+
+  <rect x="72" y="450" width="440" height="42" rx="6" fill="#FF7A00"/>
+  <text x="292" y="476" font-size="13" font-weight="bold" fill="#FFF" text-anchor="middle">GỬI EMAIL ĐẶT LẠI MẬT KHẨU TỰ ĐỘNG</text>
+
+  <rect x="72" y="505" width="440" height="42" rx="6" fill="#FFF" stroke="#E53935"/>
+  <text x="292" y="531" font-size="13" font-weight="bold" fill="#E53935" text-anchor="middle">HỦY LIÊN KẾT 2FA (RESET THIẾT BỊ TOTP CŨ)</text>
+
+  <!-- Right: Audit Security Log -->
+  <rect x="560" y="185" width="828" height="740" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="560" y="185" width="828" height="40" fill="#F6F8FB"/>
+  <text x="580" y="210" font-size="12" font-weight="bold" fill="#1E293B">AUDIT LOG AN NINH &amp; NHẬT KÝ ĐĂNG NHẬP THỜI GIAN THỰC</text>
+
+  <text x="580" y="250" font-size="12" fill="#2E7D32">🟢 21/10 15:45:02</text>
+  <text x="700" y="250" font-size="12" fill="#1E293B">Admin reset thành công 2FA cho NV: 0123 (Xác minh qua điện thoại)</text>
+
+  <text x="580" y="290" font-size="12" fill="#C62828">🔴 21/10 14:12:30</text>
+  <text x="700" y="290" font-size="12" fill="#1E293B">Khóa tạm 30 phút tài khoản test@vmodev.com do nhập sai mật khẩu 5 lần</text>
+
+</svg>

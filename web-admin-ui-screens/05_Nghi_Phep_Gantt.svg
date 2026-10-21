@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <text x="240.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Tổng quan</text>
+      <text x="369.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Nhân viên</text>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <g>
+        <rect x="567" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="627.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Ngày nghỉ</text>
+      </g>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản lý Nghỉ phép &gt; Bảng phê duyệt &amp; Gantt Lịch vắng mặt</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <!-- Metric Cards -->
+  <rect x="32" y="115" width="320" height="90" rx="10" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="52" y="142" font-size="12" fill="#6F7E95">ĐƠN CHỜ PHÊ DUYỆT (PENDING)</text>
+  <text x="52" y="180" font-size="28" font-weight="bold" fill="#FF7A00">14 Đơn</text>
+  <text x="240" y="180" font-size="12" fill="#E65100">⚡ Cần xử lý gấp: 3</text>
+
+  <rect x="372" y="115" width="320" height="90" rx="10" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="392" y="142" font-size="12" fill="#6F7E95">NHÂN VIÊN ĐANG VẮNG MẶT HÔM NAY</text>
+  <text x="392" y="180" font-size="28" font-weight="bold" fill="#1976D2">27 Người</text>
+  <text x="560" y="180" font-size="12" fill="#1976D2">18 Nghỉ phép • 9 WFH</text>
+
+  <rect x="712" y="115" width="320" height="90" rx="10" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="732" y="142" font-size="12" fill="#6F7E95">TỶ LỆ KHẢ DỤNG DỰ ÁN (PROJECT AVAILABILITY)</text>
+  <text x="732" y="180" font-size="28" font-weight="bold" fill="#2E7D32">96.8%</text>
+  <text x="910" y="180" font-size="12" fill="#2E7D32">Ổn định vận hành</text>
+
+  <rect x="1052" y="115" width="356" height="90" rx="10" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1072" y="142" font-size="12" fill="#6F7E95">QUỸ PHÉP TỒN NĂM CẦN QUYẾT TOÁN</text>
+  <text x="1072" y="180" font-size="28" font-weight="bold" fill="#7B1FA2">142 Ngày</text>
+  <text x="1260" y="180" font-size="12" fill="#7B1FA2">Hạn 31/03/2027</text>
+
+  <!-- Left: Approval Queue -->
+  <rect x="32" y="225" width="660" height="740" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="32" y="225" width="660" height="48" fill="#F6F8FB" rx="12"/>
+  <text x="52" y="255" font-size="14" font-weight="bold" fill="#1E293B">HÀNG ĐỢI DUYỆT ĐƠN NGHỈ PHÉP (14)</text>
+
+  <!-- Request Item 1 -->
+  <rect x="52" y="290" width="620" height="95" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="68" y="306" width="75" height="24" rx="12" fill="#FFF2E8"/>
+  <text x="105" y="322" font-size="11" font-weight="bold" fill="#FF7A00" text-anchor="middle">PHÉP NĂM</text>
+  <text x="155" y="322" font-size="14" font-weight="bold" fill="#1E293B">Ian Chesnut (0123) - PM Số 18</text>
+  <text x="68" y="352" font-size="12" fill="#6F7E95">Thời gian: 24/10/2026 - 25/10/2026 (02 ngày) • Lý do: Việc gia đình</text>
+  <text x="68" y="372" font-size="11" fill="#2E7D32">Người bàn giao công việc: Collins Jackson (0125) • Quỹ phép còn: 10.5 ngày</text>
+  <rect x="520" y="306" width="70" height="32" rx="6" fill="#2E7D32"/>
+  <text x="555" y="326" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">Duyệt</text>
+  <rect x="600" y="306" width="60" height="32" rx="6" fill="#FFF" stroke="#E53935"/>
+  <text x="630" y="326" font-size="12" font-weight="bold" fill="#E53935" text-anchor="middle">Từ chối</text>
+
+  <!-- Right: Gantt Chart -->
+  <rect x="712" y="225" width="696" height="740" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="712" y="225" width="696" height="48" fill="#F6F8FB" rx="12"/>
+  <text x="732" y="255" font-size="14" font-weight="bold" fill="#1E293B">GANTT TIMELINE LỊCH NGHỈ THÁNG 10/2026</text>
+  
+  <text x="732" y="310" font-size="13" font-weight="bold" fill="#1E293B">Trung Tâm PM 18</text>
+  <rect x="860" y="295" width="180" height="24" rx="4" fill="#FF7A00" opacity="0.8"/>
+  <text x="950" y="311" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">Ian Chesnut (24-25/10)</text>
+
+  <text x="732" y="360" font-size="13" font-weight="bold" fill="#1E293B">PATIENT VN</text>
+  <rect x="920" y="345" width="240" height="24" rx="4" fill="#1976D2" opacity="0.8"/>
+  <text x="1040" y="361" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">Nguyen Van B (26-28/10)</text>
+
+</svg>

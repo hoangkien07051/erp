@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <text x="240.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Tổng quan</text>
+      <g>
+        <rect x="309" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="369.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Nhân viên</text>
+      </g>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản trị Nhân sự &gt; Quản lý Hợp đồng lao động &amp; Cơ cấu Tổ chức</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <rect x="32" y="115" width="1376" height="850" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="32" y="115" width="1376" height="48" fill="#F6F8FB" rx="12"/>
+  <text x="52" y="145" font-size="14" font-weight="bold" fill="#1E293B">DANH SÁCH HỢP ĐỒNG LAO ĐỘNG &amp; CẢNH BÁO HẾT HẠN TRƯỚC 30 NGÀY</text>
+
+  <!-- Expiration Warning Alert -->
+  <rect x="52" y="180" width="1336" height="60" rx="8" fill="#FFF3E0" stroke="#FFE0B2"/>
+  <text x="72" y="206" font-size="13" font-weight="bold" fill="#E65100">⚠️ CẢNH BÁO TÁI TỤC HỢP ĐỒNG: CÓ 08 HỢP ĐỒNG SẮP HẾT HẠN TRONG 30 NGÀY TỚI</text>
+  <text x="72" y="226" font-size="12" fill="#E65100">Cần phòng HR và Quản lý trực tiếp (DUL/PM) tiến hành đánh giá hết thử việc và lập phụ lục hợp đồng chính thức.</text>
+
+  <!-- Contract Table -->
+  <rect x="52" y="260" width="1336" height="40" fill="#F6F8FB"/>
+  <text x="72" y="285" font-size="11" font-weight="bold" fill="#6F7E95">SỐ HỢP ĐỒNG</text>
+  <text x="220" y="285" font-size="11" font-weight="bold" fill="#6F7E95">NHÂN SỰ</text>
+  <text x="420" y="285" font-size="11" font-weight="bold" fill="#6F7E95">LOẠI HỢP ĐỒNG</text>
+  <text x="620" y="285" font-size="11" font-weight="bold" fill="#6F7E95">NGÀY BẮT ĐẦU</text>
+  <text x="770" y="285" font-size="11" font-weight="bold" fill="#6F7E95">NGÀY HẾT HẠN</text>
+  <text x="920" y="285" font-size="11" font-weight="bold" fill="#6F7E95">ĐẾM NGƯỢC</text>
+  <text x="1080" y="285" font-size="11" font-weight="bold" fill="#6F7E95">TRẠNG THÁI</text>
+  <text x="1240" y="285" font-size="11" font-weight="bold" fill="#6F7E95">THAO TÁC</text>
+
+  <line x1="52" y1="350" x2="1388" y2="350" stroke="#E5E9EF"/>
+  <text x="72" y="325" font-size="12" font-weight="bold" fill="#1976D2">HĐTV-2026/0123</text>
+  <text x="220" y="325" font-size="13" font-weight="bold" fill="#1E293B">Ian Chesnut (0123)</text>
+  <text x="420" y="325" font-size="13" fill="#1E293B">Thử việc 02 tháng</text>
+  <text x="620" y="325" font-size="12" fill="#6F7E95">13/02/2026</text>
+  <text x="770" y="325" font-size="12" fill="#6F7E95">13/11/2026</text>
+  <rect x="920" y="310" width="110" height="24" rx="12" fill="#FFEBEE"/>
+  <text x="975" y="326" font-size="11" font-weight="bold" fill="#C62828" text-anchor="middle">Còn 23 ngày</text>
+  <rect x="1080" y="310" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1130" y="326" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang hiệu lực</text>
+  <text x="1240" y="325" font-size="13" font-weight="bold" fill="#FF7A00">Ký chính thức ✍️</text>
+
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <g>
+        <rect x="180" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="240.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Tổng quan</text>
+      </g>
+      <text x="369.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Nhân viên</text>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Tài khoản của tôi &gt; Thông tin cá nhân &amp; Thiết lập quyền riêng tư</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <rect x="32" y="115" width="1376" height="850" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  <rect x="32" y="115" width="1376" height="48" fill="#F6F8FB" rx="12"/>
+  <text x="52" y="145" font-size="14" font-weight="bold" fill="#1E293B">HỒ SƠ CÁ NHÂN &amp; CẬP NHẬT THÔNG TIN LIÊN HỆ</text>
+
+  <!-- Left: Avatar Studio -->
+  <rect x="52" y="185" width="300" height="380" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <circle cx="202" cy="285" r="75" fill="#FF7A00"/>
+  <text x="202" y="300" font-size="44" font-weight="bold" fill="#FFF" text-anchor="middle">NA</text>
+  <text x="202" y="385" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Nguyen Van A</text>
+  <text x="202" y="410" font-size="13" fill="#6F7E95" text-anchor="middle">Designer (UI/UX) • Mã: 4412</text>
+  <rect x="102" y="435" width="200" height="36" rx="6" fill="#FF7A00"/>
+  <text x="202" y="458" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">📷 Tải ảnh đại diện mới</text>
+
+  <!-- Right: Editable & Readonly Form -->
+  <rect x="380" y="185" width="1008" height="740" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  
+  <text x="410" y="225" font-size="14" font-weight="bold" fill="#FF7A00">1. THÔNG TIN CÁ NHÂN (CHO PHÉP CHỈNH SỬA)</text>
+  
+  <text x="410" y="265" font-size="12" font-weight="bold" fill="#1E293B">Họ và tên hiển thị [*]</text>
+  <rect x="410" y="280" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="430" y="306" font-size="13" fill="#1E293B">Nguyen Van A</text>
+
+  <text x="900" y="265" font-size="12" font-weight="bold" fill="#1E293B">Số điện thoại di động (Xác thực 2FA OTP) [*]</text>
+  <rect x="900" y="280" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="920" y="306" font-size="13" fill="#1E293B">0123456789</text>
+
+  <text x="410" y="350" font-size="12" font-weight="bold" fill="#1E293B">Địa chỉ tạm trú hiện tại</text>
+  <rect x="410" y="365" width="950" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="430" y="391" font-size="13" fill="#1E293B">Số 88 Tôn Thất Thuyết, Phường Mỹ Đình 2, Quận Nam Từ Liêm, TP. Hà Nội</text>
+
+  <line x1="410" y1="440" x2="1360" y2="440" stroke="#E5E9EF"/>
+
+  <text x="410" y="475" font-size="14" font-weight="bold" fill="#1E293B">2. THÔNG TIN DO PHÒNG NHÂN SỰ QUẢN LÝ (CHỈ ĐỌC 🔒)</text>
+  
+  <g>
+    <rect x="410" y="500" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="430" y="526" font-size="12" fill="#6F7E95">Mã nhân viên: <tspan font-weight="bold" fill="#1E293B">VMO-4412 🔒</tspan></text>
+
+    <rect x="900" y="500" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="920" y="526" font-size="12" fill="#6F7E95">Email công ty: <tspan font-weight="bold" fill="#1E293B">nguyenvanabc@vmodev.com 🔒</tspan></text>
+  </g>
+
+  <g>
+    <rect x="410" y="560" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="430" y="586" font-size="12" fill="#6F7E95">Vị trí: <tspan font-weight="bold" fill="#1E293B">Designer (UI/UX) 🔒</tspan></text>
+
+    <rect x="900" y="560" width="460" height="42" rx="6" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="920" y="586" font-size="12" fill="#6F7E95">Trụ sở làm việc: <tspan font-weight="bold" fill="#1E293B">CT11 (Tòa TTC Duy Tân) 🔒</tspan></text>
+  </g>
+
+  <!-- Submit button -->
+  <rect x="1210" y="650" width="150" height="44" rx="6" fill="#FF7A00"/>
+  <text x="1285" y="677" font-size="13" font-weight="bold" fill="#FFF" text-anchor="middle">LƯU THAY ĐỔI</text>
+
+</svg>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <text x="240.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Tổng quan</text>
+      <g>
+        <rect x="309" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="369.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Nhân viên</text>
+      </g>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản trị Nhân sự &gt; Hồ sơ Chi tiết 360° &gt; Ian Chesnut (0123)</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <!-- Action Bar -->
+  <rect x="32" y="115" width="100" height="36" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="82" y="138" font-size="13" fill="#1E293B" text-anchor="middle">&lt; Quay lại</text>
+
+  <rect x="920" y="115" width="120" height="36" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="980" y="138" font-size="13" fill="#1E293B" text-anchor="middle">🗑️ Lưu trữ HS</text>
+
+  <rect x="1050" y="115" width="110" height="36" rx="6" fill="#FF7A00"/>
+  <text x="1105" y="138" font-size="13" font-weight="bold" fill="#FFF" text-anchor="middle">✏️ Chỉnh sửa</text>
+
+  <rect x="1170" y="115" width="120" height="36" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1230" y="138" font-size="13" fill="#1E293B" text-anchor="middle">🚀 Onboarding</text>
+
+  <rect x="1300" y="115" width="108" height="36" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1354" y="138" font-size="13" fill="#1E293B" text-anchor="middle">⚡ Thao tác ▾</text>
+
+  <!-- Left Sidebar Card (360 Summary) -->
+  <rect x="32" y="170" width="360" height="810" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  
+  <circle cx="212" cy="270" r="70" fill="#FF7A00"/>
+  <text x="212" y="285" font-size="44" font-weight="bold" fill="#FFF" text-anchor="middle">IC</text>
+  
+  <text x="212" y="375" font-size="20" font-weight="bold" fill="#1E293B" text-anchor="middle">Ian Chesnut</text>
+  <text x="212" y="400" font-size="13" fill="#6F7E95" text-anchor="middle">Tester (Rank 2) • Mã NV: 0123</text>
+  
+  <rect x="90" y="425" width="115" height="26" rx="13" fill="#EAF7EB"/>
+  <text x="147" y="442" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">ĐANG LÀM VIỆC</text>
+  
+  <rect x="215" y="425" width="115" height="26" rx="13" fill="#FFF3E0"/>
+  <text x="272" y="442" font-size="11" font-weight="bold" fill="#E65100" text-anchor="middle">HĐ: THỬ VIỆC</text>
+
+  <line x1="52" y1="475" x2="372" y2="475" stroke="#E5E9EF"/>
+  
+  <text x="52" y="505" font-size="13" fill="#6F7E95">Thâm niên công tác:</text>
+  <text x="372" y="505" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="end">0 năm 8 tháng 8 ngày</text>
+
+  <text x="52" y="540" font-size="13" fill="#6F7E95">Phép năm còn lại:</text>
+  <text x="372" y="540" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="end">10.5 / 12 ngày</text>
+
+  <text x="52" y="575" font-size="13" fill="#6F7E95">Quản lý trực tiếp:</text>
+  <text x="372" y="575" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="end">DUL - 2611</text>
+
+  <text x="52" y="610" font-size="13" fill="#6F7E95">Địa điểm làm việc:</text>
+  <text x="372" y="610" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="end">IDMC 5 Tôn Thất Thuyết</text>
+
+  <!-- Legal Progress -->
+  <rect x="52" y="650" width="320" height="110" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="68" y="675" font-size="12" font-weight="bold" fill="#1E293B">HỒ SƠ PHÁP LÝ: ĐÃ NỘP 5/7 (85%)</text>
+  <rect x="68" y="690" width="288" height="10" rx="5" fill="#E5E9EF"/>
+  <rect x="68" y="690" width="245" height="10" rx="5" fill="#FF7A00"/>
+  <text x="68" y="725" font-size="11" fill="#E53935">⏳ Thiếu CCCD công chứng &amp; Giấy khám SK</text>
+  <text x="68" y="742" font-size="11" fill="#6F7E95">Hạn chót bổ sung: 25/10/2026</text>
+
+  <!-- Right Tabs Container -->
+  <rect x="416" y="170" width="992" height="810" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  
+  <!-- 7 Tabs Navigation -->
+  <rect x="430" y="186" width="120" height="36" rx="6" fill="#FFF"/>
+  <text x="490" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">1. Lý lịch cá nhân</text>
+
+  <rect x="555" y="186" width="120" height="36" rx="6" fill="#FFF"/>
+  <text x="615" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">2. Thông tin chung</text>
+
+  <rect x="680" y="186" width="110" height="36" rx="6" fill="#FFF2E8"/>
+  <text x="735" y="208" font-size="12" font-weight="bold" fill="#FF7A00" text-anchor="middle">3. Công việc</text>
+
+  <rect x="795" y="186" width="130" height="36" rx="6" fill="#FFF"/>
+  <text x="860" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">4. Hợp đồng &amp; Lương</text>
+
+  <rect x="930" y="186" width="110" height="36" rx="6" fill="#FFF"/>
+  <text x="985" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">5. Bảo hiểm &amp; Thuế</text>
+
+  <rect x="1045" y="186" width="110" height="36" rx="6" fill="#FFF"/>
+  <text x="1100" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">6. Người phụ thuộc</text>
+
+  <rect x="1160" y="186" width="110" height="36" rx="6" fill="#FFF"/>
+  <text x="1215" y="208" font-size="12" fill="#6F7E95" text-anchor="middle">7. Lịch sử &amp; Log</text>
+
+  <line x1="416" y1="235" x2="1408" y2="235" stroke="#E5E9EF"/>
+
+  <!-- Tab Content: Công việc -->
+  <text x="445" y="270" font-size="15" font-weight="bold" fill="#1E293B">CHI TIẾT VỊ TRÍ &amp; BỘ PHẬN ĐẢM NHIỆM</text>
+
+  <!-- Job Fields Table -->
+  <g>
+    <rect x="445" y="295" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="465" y="318" font-size="11" fill="#6F7E95">Email công việc doanh nghiệp</text>
+    <text x="465" y="338" font-size="13" font-weight="bold" fill="#1E293B">ian.chesnut@vmo-group.com</text>
+
+    <rect x="925" y="295" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="945" y="318" font-size="11" fill="#6F7E95">Trung tâm / Đơn vị trực thuộc</text>
+    <text x="945" y="338" font-size="13" font-weight="bold" fill="#1E293B">Trung Tâm PM Số 18 (Global Software)</text>
+  </g>
+
+  <g>
+    <rect x="445" y="365" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="465" y="388" font-size="11" fill="#6F7E95">Vị trí chuyên môn (Rank)</text>
+    <text x="465" y="408" font-size="13" font-weight="bold" fill="#1E293B">Tester (Rank 2) - Mid-level QA Engineer</text>
+
+    <rect x="925" y="365" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="945" y="388" font-size="11" fill="#6F7E95">Cấp bậc quản lý &amp; Phân cấp</text>
+    <text x="945" y="408" font-size="13" font-weight="bold" fill="#1E293B">Level 2 (Nhân viên chính thức dự án)</text>
+  </g>
+
+  <g>
+    <rect x="445" y="435" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="465" y="458" font-size="11" fill="#6F7E95">Người quản lý trực tiếp (Line Manager)</text>
+    <text x="465" y="478" font-size="13" font-weight="bold" fill="#1E293B">Nguyễn Văn Quản Lý (Mã: 2611)</text>
+
+    <rect x="925" y="435" width="460" height="54" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+    <text x="945" y="458" font-size="11" fill="#6F7E95">Người hướng dẫn (Mentor / Buddy)</text>
+    <text x="945" y="478" font-size="13" font-weight="bold" fill="#1E293B">Nguyễn Văn A (Mã: 4412)</text>
+  </g>
+
+  <!-- Timeline Job History -->
+  <text x="445" y="525" font-size="14" font-weight="bold" fill="#1E293B">LỊCH SỬ THAY ĐỔI CÔNG TÁC &amp; BỔ NHIỆM</text>
+  
+  <rect x="445" y="545" width="940" height="70" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <circle cx="475" cy="580" r="14" fill="#EAF7EB"/>
+  <text x="475" y="584" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">✓</text>
+  <text x="505" y="572" font-size="13" font-weight="bold" fill="#1E293B">Gia hạn hợp đồng Thử việc 02 tháng (Đợt 2)</text>
+  <text x="505" y="595" font-size="12" fill="#6F7E95">Quyết định số: 104/QĐ-VMO • Hiệu lực: 01/09/2026 • Người ký: Giám đốc Nhân sự</text>
+
+  <rect x="445" y="625" width="940" height="70" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <circle cx="475" cy="660" r="14" fill="#E8F1FC"/>
+  <text x="475" y="664" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">★</text>
+  <text x="505" y="652" font-size="13" font-weight="bold" fill="#1E293B">Tuyển dụng mới &amp; Tiếp nhận thử việc Tester Rank 2</text>
+  <text x="505" y="675" font-size="12" fill="#6F7E95">Quyết định số: 042/QĐ-VMO • Ngày bắt đầu: 13/02/2026 • Trung Tâm PM Số 18</text>
+
+  <!-- 2FA & Account Status -->
+  <rect x="445" y="715" width="940" height="85" rx="8" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="465" y="742" font-size="13" font-weight="bold" fill="#1E293B">TRẠNG THÁI TÀI KHOẢN &amp; BẢO MẬT HỆ THỐNG</text>
+  <text x="465" y="768" font-size="12" fill="#6F7E95">Tài khoản Web/App: Hoạt động • Phương thức xác thực 2 bước (2FA): Đã kích hoạt qua TOTP Authenticator</text>
+  <text x="465" y="786" font-size="12" fill="#FF7A00">Lần đăng nhập gần nhất: 21/10/2026 08:31:04 từ IP 118.70.182.90 (Trụ sở TTC11)</text>
+
+</svg>

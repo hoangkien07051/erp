@@ -1,0 +1,9 @@
+{
+  "name": "VMO ERP - Web Admin Screen Generator",
+  "id": "vmo-erp-web-admin-generator",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figma"]
+}

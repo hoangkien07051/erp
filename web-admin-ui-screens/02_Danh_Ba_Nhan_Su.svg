@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <text x="240.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Tổng quan</text>
+      <g>
+        <rect x="309" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="369.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Nhân viên</text>
+      </g>
+      <text x="498.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Chấm công</text>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản trị Nhân sự &gt; Danh bạ Cư dân VMO (81 Đơn vị)</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <!-- Quick Tabs -->
+  <g>
+    <rect x="32" y="115" width="100" height="36" rx="8" fill="#FF7A00"/>
+    <text x="82" y="138" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">Tất cả (81)</text>
+    
+    <rect x="140" y="115" width="110" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="195" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">BOD (10)</text>
+    
+    <rect x="258" y="115" width="90" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="303" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">HR (5)</text>
+    
+    <rect x="356" y="115" width="120" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="416" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">Kinh doanh (1)</text>
+    
+    <rect x="484" y="115" width="90" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="529" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">QA (2)</text>
+    
+    <rect x="582" y="115" width="90" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="627" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">SWAT (1)</text>
+    
+    <rect x="680" y="115" width="140" height="36" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+    <text x="750" y="138" font-size="12" fill="#6F7E95" text-anchor="middle">Trung Tâm PM 18 (2)</text>
+  </g>
+
+  <!-- Search & Actions Bar -->
+  <rect x="32" y="165" width="360" height="42" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="50" y="191" font-size="13" fill="#8C9BAE">🔍 Tìm theo Tên, Mã NV, Chức vụ...</text>
+
+  <rect x="405" y="165" width="280" height="42" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="425" y="191" font-size="13" fill="#1E293B">🏢 Cây đơn vị: Tất cả 81 đơn vị ▾</text>
+
+  <rect x="940" y="165" width="150" height="42" rx="6" fill="#FF7A00"/>
+  <text x="1015" y="191" font-size="13" font-weight="bold" fill="#FFF" text-anchor="middle">[+] Tạo mới nhân sự</text>
+
+  <rect x="1105" y="165" width="160" height="42" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1185" y="191" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="middle">[^] Smart Import Excel</text>
+
+  <rect x="1280" y="165" width="128" height="42" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1344" y="191" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="middle">[v] Xuất XLSX</text>
+
+  <!-- Master Table Card -->
+  <rect x="32" y="225" width="1376" height="740" rx="12" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <rect x="32" y="225" width="1376" height="48" fill="#F6F8FB" rx="12"/>
+
+  <!-- Columns -->
+  <text x="50" y="255" font-size="11" font-weight="bold" fill="#6F7E95">[ ]</text>
+  <text x="90" y="255" font-size="11" font-weight="bold" fill="#6F7E95">MÃ NV</text>
+  <text x="180" y="255" font-size="11" font-weight="bold" fill="#6F7E95">HỌ VÀ TÊN</text>
+  <text x="400" y="255" font-size="11" font-weight="bold" fill="#6F7E95">BỘ PHẬN</text>
+  <text x="600" y="255" font-size="11" font-weight="bold" fill="#6F7E95">VỊ TRÍ / CHỨC DANH</text>
+  <text x="780" y="255" font-size="11" font-weight="bold" fill="#6F7E95">TRỤ SỞ</text>
+  <text x="900" y="255" font-size="11" font-weight="bold" fill="#6F7E95">HỢP ĐỒNG</text>
+  <text x="1030" y="255" font-size="11" font-weight="bold" fill="#6F7E95">THÂM NIÊN</text>
+  <text x="1200" y="255" font-size="11" font-weight="bold" fill="#6F7E95">TRẠNG THÁI</text>
+  <text x="1330" y="255" font-size="11" font-weight="bold" fill="#6F7E95">THAO TÁC</text>
+
+  <!-- Row 1 -->
+  <line x1="32" y1="335" x2="1408" y2="335" stroke="#E5E9EF"/>
+  <text x="50" y="310" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="295" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="311" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">0123</text>
+  <text x="180" y="311" font-size="13" font-weight="bold" fill="#1E293B">Ian Chesnut</text>
+  <text x="400" y="311" font-size="13" fill="#1E293B">Trung Tâm PM Số 18</text>
+  <text x="600" y="311" font-size="13" fill="#1E293B">Tester (Rank 2)</text>
+  <text x="780" y="311" font-size="13" fill="#6F7E95">IDMC 5</text>
+  <text x="900" y="311" font-size="13" fill="#1E293B">Thử việc</text>
+  <text x="1030" y="311" font-size="12" fill="#FF7A00" font-weight="bold">0 năm 8 tháng 8 ngày</text>
+  <rect x="1200" y="295" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1250" y="311" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang làm việc</text>
+  <text x="1330" y="311" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Row 2 -->
+  <line x1="32" y1="395" x2="1408" y2="395" stroke="#E5E9EF"/>
+  <text x="50" y="370" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="355" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="371" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">0125</text>
+  <text x="180" y="371" font-size="13" font-weight="bold" fill="#1E293B">Collins Jackson</text>
+  <text x="400" y="371" font-size="13" fill="#1E293B">Trung Tâm PM Số 18</text>
+  <text x="600" y="371" font-size="13" fill="#1E293B">Tester (Rank 1)</text>
+  <text x="780" y="371" font-size="13" fill="#6F7E95">IDMC 5</text>
+  <text x="900" y="371" font-size="13" fill="#1E293B">Thử việc</text>
+  <text x="1030" y="371" font-size="12" fill="#FF7A00" font-weight="bold">0 năm 8 tháng 8 ngày</text>
+  <rect x="1200" y="355" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1250" y="371" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang làm việc</text>
+  <text x="1330" y="371" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Row 3 -->
+  <line x1="32" y1="455" x2="1408" y2="455" stroke="#E5E9EF"/>
+  <text x="50" y="430" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="415" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="431" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">0006</text>
+  <text x="180" y="431" font-size="13" font-weight="bold" fill="#1E293B">Nguyen Van B</text>
+  <text x="400" y="431" font-size="13" fill="#1E293B">PATIENT VIỆT NAM</text>
+  <text x="600" y="431" font-size="13" fill="#1E293B">Giám đốc Trung tâm</text>
+  <text x="780" y="431" font-size="13" fill="#6F7E95">TTC11</text>
+  <text x="900" y="431" font-size="13" fill="#1E293B">Chính thức</text>
+  <text x="1030" y="431" font-size="12" fill="#6F7E95">3 năm 2 tháng 12 ngày</text>
+  <rect x="1200" y="415" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1250" y="431" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang làm việc</text>
+  <text x="1330" y="431" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Row 4 -->
+  <line x1="32" y1="515" x2="1408" y2="515" stroke="#E5E9EF"/>
+  <text x="50" y="490" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="475" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="491" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">2611</text>
+  <text x="180" y="491" font-size="13" font-weight="bold" fill="#1E293B">Nguyễn Văn Quản Lý</text>
+  <text x="400" y="491" font-size="13" fill="#1E293B">Global PM18</text>
+  <text x="600" y="491" font-size="13" fill="#1E293B">DUL Quản lý</text>
+  <text x="780" y="491" font-size="13" fill="#6F7E95">TTC11</text>
+  <text x="900" y="491" font-size="13" fill="#1E293B">Chính thức</text>
+  <text x="1030" y="491" font-size="12" fill="#6F7E95">4 năm 1 tháng 0 ngày</text>
+  <rect x="1200" y="475" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1250" y="491" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang làm việc</text>
+  <text x="1330" y="491" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Row 5 -->
+  <line x1="32" y1="575" x2="1408" y2="575" stroke="#E5E9EF"/>
+  <text x="50" y="550" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="535" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="551" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">4412</text>
+  <text x="180" y="551" font-size="13" font-weight="bold" fill="#1E293B">Nguyen Van A</text>
+  <text x="400" y="551" font-size="13" fill="#1E293B">UI/UX Design Studio</text>
+  <text x="600" y="551" font-size="13" fill="#1E293B">Designer (UI/UX)</text>
+  <text x="780" y="551" font-size="13" fill="#6F7E95">CT11</text>
+  <text x="900" y="551" font-size="13" fill="#1E293B">Chính thức</text>
+  <text x="1030" y="551" font-size="12" fill="#6F7E95">1 năm 6 tháng 5 ngày</text>
+  <rect x="1200" y="535" width="100" height="24" rx="12" fill="#EAF7EB"/>
+  <text x="1250" y="551" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">Đang làm việc</text>
+  <text x="1330" y="551" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Row 6 -->
+  <line x1="32" y1="635" x2="1408" y2="635" stroke="#E5E9EF"/>
+  <text x="50" y="610" font-size="12" fill="#6F7E95">[ ]</text>
+  <rect x="90" y="595" width="60" height="24" rx="12" fill="#E8F1FC"/>
+  <text x="120" y="611" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">0098</text>
+  <text x="180" y="611" font-size="13" font-weight="bold" fill="#1E293B">Trần Thị Thu Trang</text>
+  <text x="400" y="611" font-size="13" fill="#1E293B">HR Dept</text>
+  <text x="600" y="611" font-size="13" fill="#1E293B">C&amp;B Specialist</text>
+  <text x="780" y="611" font-size="13" fill="#6F7E95">TTC11</text>
+  <text x="900" y="611" font-size="13" fill="#1E293B">Chính thức</text>
+  <text x="1030" y="611" font-size="12" fill="#6F7E95">2 năm 0 tháng 15 ngày</text>
+  <rect x="1200" y="595" width="100" height="24" rx="12" fill="#FFF3E0"/>
+  <text x="1250" y="611" font-size="11" font-weight="bold" fill="#E65100" text-anchor="middle">Nghỉ thai sản</text>
+  <text x="1330" y="611" font-size="14" fill="#6F7E95">✏️  👁️  ⋮</text>
+
+  <!-- Pagination Footer -->
+  <text x="50" y="930" font-size="12" fill="#6F7E95">Hiển thị 1 - 6 trong tổng số 81 nhân sự (Trang 1 / 14)</text>
+  <rect x="1150" y="910" width="80" height="32" rx="4" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1190" y="931" font-size="12" fill="#1E293B" text-anchor="middle">&lt; Trước</text>
+  <rect x="1240" y="910" width="32" height="32" rx="4" fill="#FF7A00"/>
+  <text x="1256" y="931" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">1</text>
+  <rect x="1280" y="910" width="32" height="32" rx="4" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1296" y="931" font-size="12" fill="#1E293B" text-anchor="middle">2</text>
+  <rect x="1320" y="910" width="75" height="32" rx="4" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1357" y="931" font-size="12" fill="#1E293B" text-anchor="middle">Sau &gt;</text>
+
+</svg>

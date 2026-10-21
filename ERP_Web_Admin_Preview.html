@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMO Enterprise ERP - Web Admin UI Showcase (10 Modules SRS)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #FF7A00;
+      --primary-hover: #E66E00;
+      --bg: #0F172A;
+      --sidebar: #1E293B;
+      --card: #1E293B;
+      --border: #334155;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 320px;
+      background: var(--sidebar);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .brand {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
+    .brand-title h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .brand-title p {
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .nav-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 12px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .nav-item {
+      padding: 12px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+    .nav-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
+    .nav-item.active {
+      background: rgba(255, 122, 0, 0.15);
+      color: var(--primary);
+      border-color: rgba(255, 122, 0, 0.3);
+      font-weight: 600;
+    }
+    .nav-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      margin-left: auto;
+    }
+    .nav-item.active .nav-badge {
+      background: var(--primary);
+      color: #fff;
+    }
+    /* Main Content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: #0B0F19;
+    }
+    .toolbar {
+      padding: 14px 28px;
+      background: var(--sidebar);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .screen-meta h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .screen-meta p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .viewport {
+      flex: 1;
+      overflow: auto;
+      padding: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: #060911;
+    }
+    .screen-container {
+      background: #F6F8FB;
+      width: 1440px;
+      height: 1024px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      transform-origin: top center;
+    }
+    .screen-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">V</div>
+      <div class="brand-title">
+        <h1>VMO ERP Web Admin</h1>
+        <p>10 MÀN HÌNH CHUẨN SRS</p>
+      </div>
+    </div>
+    <ul class="nav-list" id="navList">
+      <!-- Generated via JS -->
+    </ul>
+  </aside>
+
+  <!-- Main View -->
+  <main class="main">
+    <header class="toolbar">
+      <div class="screen-meta">
+        <h2 id="screenTitle">01 - Đăng nhập Cổng Quản trị</h2>
+        <p id="screenSRS">SRS_Login_Web_Admin.md • SCR_WEB_LOGIN_001 • 1440 x 1024 px</p>
+      </div>
+      <div class="actions">
+        <a id="btnSvgDownload" class="btn btn-secondary" href="#" target="_blank" download>
+          ⬇️ Tải file SVG
+        </a>
+        <button class="btn btn-secondary" onclick="fitScreen()">🔍 Zoom Vừa Màn Hình</button>
+        <button class="btn btn-primary" onclick="window.open(currentSvgUrl, '_blank')">🌐 Mở Full Tab</button>
+      </div>
+    </header>
+    <div class="viewport" id="viewport">
+      <div class="screen-container" id="screenBox">
+        <object class="screen-img" id="screenViewer" type="image/svg+xml" data="web-admin-ui-screens/01_Login_Web_Admin.svg"></object>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const screens = [
+      { id: '01', file: 'web-admin-ui-screens/01_Login_Web_Admin.svg', title: '01. Đăng nhập Cổng Quản trị', srs: 'SRS_Login_Web_Admin.md', code: 'SCR_WEB_LOGIN_001' },
+      { id: '02', file: 'web-admin-ui-screens/02_Danh_Ba_Nhan_Su.svg', title: '02. Danh bạ 81 Đơn vị & Cây tổ chức', srs: 'SRS_Quan_Tri_Thong_Tin_Nhan_Su_Web_Admin.md', code: 'SCR_WEB_HR_001' },
+      { id: '03', file: 'web-admin-ui-screens/03_Ho_So_Nhan_Su_360.svg', title: '03. Hồ sơ Nhân sự 360° & Dynamic Tabs', srs: 'SRS_Quan_Tri_Nhan_Su_Web_Admin.md', code: 'SCR_WEB_HR_360' },
+      { id: '04', file: 'web-admin-ui-screens/04_Cham_Cong_Spreadsheet.svg', title: '04. Bảng công Spreadsheet 31 Ngày & IoT', srs: 'SRS_Quan_Ly_Cham_Cong_Web_Admin.md', code: 'SCR_WEB_ATT_001' },
+      { id: '05', file: 'web-admin-ui-screens/05_Nghi_Phep_Gantt.svg', title: '05. Quản lý Nghỉ phép & Gantt Timeline', srs: 'SRS_Quan_Ly_Nghi_Phep_Web_Admin.md', code: 'SCR_WEB_LEAVE_001' },
+      { id: '06', file: 'web-admin-ui-screens/06_Lam_Them_Gio_OT.svg', title: '06. Quản lý OT & Quỹ 200h/300h Luật Lao động', srs: 'SRS_Quan_Ly_Lam_Them_Gio_OT_Web_Admin.md', code: 'SCR_WEB_OT_001' },
+      { id: '07', file: 'web-admin-ui-screens/07_Hop_Dong_Va_So_Do.svg', title: '07. Hợp đồng Lao động & Sơ đồ Tổ chức', srs: 'SRS_Quan_Ly_Hop_Dong_Va_Phong_Ban_Web_Admin.md', code: 'SCR_WEB_CONTR_001' },
+      { id: '08', file: 'web-admin-ui-screens/08_Dat_Lai_Mat_Khau_2FA.svg', title: '08. Cấu hình Bảo mật & Reset Khóa 2FA', srs: 'SRS_Dat_Lai_Mat_Khau_2FA_Web_Admin.md', code: 'SCR_WEB_SEC_001' },
+      { id: '09', file: 'web-admin-ui-screens/09_Shell_Va_Thong_Bao.svg', title: '09. Broadcast Studio & Thông báo Đa kênh', srs: 'SRS_Dieu_Huong_Va_Thong_Bao_Web_Admin.md', code: 'SCR_WEB_NOTIF_001' },
+      { id: '10', file: 'web-admin-ui-screens/10_Ho_So_Ca_Nhan_Settings.svg', title: '10. Hồ sơ Cá nhân & Thiết lập Tài khoản', srs: 'SRS_Thay_Doi_Thong_Tin_Web_Admin.md', code: 'SCR_WEB_PROFILE_001' }
+    ];
+
+    let currentSvgUrl = screens[0].file;
+    const navList = document.getElementById('navList');
+    const screenTitle = document.getElementById('screenTitle');
+    const screenSRS = document.getElementById('screenSRS');
+    const screenViewer = document.getElementById('screenViewer');
+    const btnSvgDownload = document.getElementById('btnSvgDownload');
+    const screenBox = document.getElementById('screenBox');
+
+    screens.forEach((s, idx) => {
+      const li = document.createElement('li');
+      li.className = `nav-item ${idx === 0 ? 'active' : ''}`;
+      li.innerHTML = `
+        <span>${s.title}</span>
+        <span class="nav-badge">${s.code.split('_')[2]}</span>
+      `;
+      li.onclick = () => selectScreen(idx);
+      navList.appendChild(li);
+    });
+
+    function selectScreen(idx) {
+      document.querySelectorAll('.nav-item').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+      const s = screens[idx];
+      currentSvgUrl = s.file;
+      screenTitle.innerText = s.title;
+      screenSRS.innerText = `${s.srs} • ${s.code} • 1440 x 1024 px`;
+      screenViewer.data = s.file;
+      btnSvgDownload.href = s.file;
+      btnSvgDownload.setAttribute('download', s.file.split('/').pop());
+    }
+
+    function fitScreen() {
+      const vp = document.getElementById('viewport');
+      const scaleW = (vp.clientWidth - 56) / 1440;
+      const scaleH = (vp.clientHeight - 56) / 1024;
+      const scale = Math.min(scaleW, scaleH, 1);
+      screenBox.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', fitScreen);
+    setTimeout(fitScreen, 100);
+  </script>
+</body>
+</html>

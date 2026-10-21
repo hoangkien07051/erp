@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F6F8FB; font-family:'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <!-- Background -->
+  <rect width="1440" height="1024" fill="#F6F8FB"/>
+  
+  <!-- Topbar Navigation Header -->
+  <rect width="1440" height="64" fill="#FFFFFF" stroke="#E5E9EF" stroke-width="1"/>
+  <rect x="24" y="16" width="32" height="32" rx="8" fill="#FF7A00"/>
+  <text x="40" y="38" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V</text>
+  <text x="68" y="38" font-size="16" font-weight="bold" fill="#1E293B">VMO ERP</text>
+  
+      <text x="240.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Tổng quan</text>
+      <text x="369.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Nhân viên</text>
+      <g>
+        <rect x="438" y="16" width="121" height="32" rx="16" fill="#FFF2E8"/>
+        <text x="498.5" y="37" font-size="13" font-weight="bold" fill="#FF7A00" text-anchor="middle">Chấm công</text>
+      </g>
+      <text x="627.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Ngày nghỉ</text>
+      <text x="734.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Dự án</text>
+      <text x="841.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Thảo luận</text>
+      <text x="970.5" y="37" font-size="13" fill="#6F7E95" text-anchor="middle">Hướng dẫn</text>
+  
+  <!-- Global Search -->
+  <rect x="1030" y="16" width="220" height="32" rx="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1046" y="36" font-size="12" fill="#8C9BAE">🔍 Tìm kiếm (Ctrl+K)...</text>
+  
+  <!-- Notification Bell -->
+  <circle cx="1285" cy="32" r="16" fill="#F6F8FB" stroke="#E5E9EF"/>
+  <text x="1285" y="36" font-size="13" text-anchor="middle">🔔</text>
+  <circle cx="1297" cy="22" r="7" fill="#E53935"/>
+  <text x="1297" y="25" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  
+  <!-- User Profile -->
+  <circle cx="1340" cy="32" r="16" fill="#FF7A00"/>
+  <text x="1340" y="36" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">AD</text>
+  <text x="1364" y="36" font-size="13" font-weight="bold" fill="#1E293B">Admin ▾</text>
+  <!-- Breadcrumb & Status -->
+  <text x="32" y="90" font-size="12" fill="#6F7E95">Trang chủ &gt; Quản lý Chấm công &gt; Bảng Tổng hợp Chấm công Spreadsheet 31 Ngày</text>
+  <text x="1408" y="90" font-size="12" fill="#6F7E95" text-anchor="end">21/10/2026 • Hệ thống Trực tuyến 🟢</text>
+
+  <!-- Controls Bar -->
+  <rect x="32" y="115" width="180" height="42" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="48" y="141" font-size="13" font-weight="bold" fill="#1E293B">📅 Tháng 10/2026 ▾</text>
+
+  <rect x="225" y="115" width="220" height="42" rx="8" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="245" y="141" font-size="13" fill="#1E293B">🏢 Tất cả bộ phận (81) ▾</text>
+
+  <rect x="460" y="124" width="230" height="26" rx="13" fill="#EAF7EB"/>
+  <text x="575" y="141" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">MÁY CHẤM CÔNG IOT: 3/3 ONLINE 🟢</text>
+
+  <rect x="1100" y="115" width="150" height="42" rx="6" fill="#FFF" stroke="#E5E9EF"/>
+  <text x="1175" y="141" font-size="13" font-weight="bold" fill="#1E293B" text-anchor="middle">🔄 Đồng bộ IoT Biometric</text>
+
+  <rect x="1260" y="115" width="148" height="42" rx="6" fill="#FF7A00"/>
+  <text x="1334" y="141" font-size="13" font-weight="bold" fill="#FFF" text-anchor="middle">📊 Xuất Bảng Lương</text>
+
+  <!-- Spreadsheet Card -->
+  <rect x="32" y="175" width="1376" height="790" rx="12" fill="#FFF" stroke="#E5E9EF"/>
+  
+  <!-- Legend Bar -->
+  <rect x="32" y="175" width="1376" height="44" fill="#F6F8FB" rx="12"/>
+  <text x="48" y="202" font-size="11" font-weight="bold" fill="#6F7E95">KÝ HIỆU CHẤM CÔNG CHUẨN:</text>
+  
+  <rect x="230" y="185" width="55" height="22" rx="4" fill="#EAF7EB"/>
+  <text x="257" y="200" font-size="11" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0 (Đủ)</text>
+
+  <rect x="295" y="185" width="60" height="22" rx="4" fill="#FFF3E0"/>
+  <text x="325" y="200" font-size="11" font-weight="bold" fill="#E65100" text-anchor="middle">0.5 (Nửa)</text>
+
+  <rect x="365" y="185" width="65" height="22" rx="4" fill="#FFEBEE"/>
+  <text x="397" y="200" font-size="11" font-weight="bold" fill="#C62828" text-anchor="middle">M836 (Muộn)</text>
+
+  <rect x="440" y="185" width="65" height="22" rx="4" fill="#E8F1FC"/>
+  <text x="472" y="200" font-size="11" font-weight="bold" fill="#1976D2" text-anchor="middle">P (Nghỉ phép)</text>
+
+  <rect x="515" y="185" width="60" height="22" rx="4" fill="#F3E5F5"/>
+  <text x="545" y="200" font-size="11" font-weight="bold" fill="#7B1FA2" text-anchor="middle">WFH</text>
+
+  <text x="1200" y="202" font-size="11" fill="#6F7E95">Tổng nhân sự có mặt hôm nay: 894 / 921 (97%)</text>
+
+  <!-- Spreadsheet Table Header -->
+  <rect x="32" y="220" width="1376" height="40" fill="#EDF2F7"/>
+  <text x="48" y="245" font-size="11" font-weight="bold" fill="#4A5568">MÃ NV / HỌ VÀ TÊN</text>
+  <text x="270" y="245" font-size="11" font-weight="bold" fill="#4A5568">ĐƠN VỊ</text>
+  
+  <!-- Days 01 -> 15 mini visual grid -->
+  <text x="430" y="245" font-size="10" font-weight="bold" fill="#4A5568">01</text>
+  <text x="465" y="245" font-size="10" font-weight="bold" fill="#4A5568">02</text>
+  <text x="500" y="245" font-size="10" font-weight="bold" fill="#4A5568">03</text>
+  <text x="535" y="245" font-size="10" font-weight="bold" fill="#4A5568">04</text>
+  <text x="570" y="245" font-size="10" font-weight="bold" fill="#4A5568">05</text>
+  <text x="605" y="245" font-size="10" font-weight="bold" fill="#4A5568">06</text>
+  <text x="640" y="245" font-size="10" font-weight="bold" fill="#4A5568">07</text>
+  <text x="675" y="245" font-size="10" font-weight="bold" fill="#4A5568">08</text>
+  <text x="710" y="245" font-size="10" font-weight="bold" fill="#4A5568">09</text>
+  <text x="745" y="245" font-size="10" font-weight="bold" fill="#4A5568">10</text>
+  <text x="780" y="245" font-size="10" font-weight="bold" fill="#4A5568">11</text>
+  <text x="815" y="245" font-size="10" font-weight="bold" fill="#4A5568">12</text>
+  <text x="850" y="245" font-size="10" font-weight="bold" fill="#4A5568">13</text>
+  <text x="885" y="245" font-size="10" font-weight="bold" fill="#4A5568">14</text>
+  <text x="920" y="245" font-size="10" font-weight="bold" fill="#4A5568">15</text>
+  <text x="955" y="245" font-size="10" font-weight="bold" fill="#4A5568">...</text>
+  <text x="990" y="245" font-size="10" font-weight="bold" fill="#4A5568">31</text>
+
+  <text x="1050" y="245" font-size="11" font-weight="bold" fill="#4A5568">CHUẨN</text>
+  <text x="1120" y="245" font-size="11" font-weight="bold" fill="#4A5568">THỰC TẾ</text>
+  <text x="1190" y="245" font-size="11" font-weight="bold" fill="#4A5568">NGHỈ P</text>
+  <text x="1260" y="245" font-size="11" font-weight="bold" fill="#4A5568">GIỜ OT</text>
+  <text x="1330" y="245" font-size="11" font-weight="bold" fill="#4A5568">LƯƠNG CÔNG</text>
+
+  <!-- Row 1: Ian Chesnut -->
+  <line x1="32" y1="315" x2="1408" y2="315" stroke="#E5E9EF"/>
+  <text x="48" y="285" font-size="13" font-weight="bold" fill="#1E293B">Ian Chesnut (0123)</text>
+  <text x="48" y="303" font-size="11" fill="#6F7E95">Tester Rank 2</text>
+  <text x="270" y="295" font-size="12" fill="#1E293B">PM Số 18</text>
+
+  <!-- badges for Ian -->
+  <rect x="425" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="439" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="460" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="474" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="495" y="280" width="28" height="22" rx="4" fill="#FFEBEE"/><text x="509" y="295" font-size="9" font-weight="bold" fill="#C62828" text-anchor="middle">M836</text>
+  <rect x="530" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="544" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="565" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="579" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="600" y="280" width="28" height="22" rx="4" fill="#F3E5F5"/><text x="614" y="295" font-size="9" font-weight="bold" fill="#7B1FA2" text-anchor="middle">WFH</text>
+  <rect x="635" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="649" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="670" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="684" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="705" y="280" width="28" height="22" rx="4" fill="#E8F1FC"/><text x="719" y="295" font-size="10" font-weight="bold" fill="#1976D2" text-anchor="middle">P</text>
+  <rect x="740" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="754" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="775" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="789" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="810" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="824" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="845" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="859" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="880" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="894" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="915" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="929" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="985" y="280" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="999" y="295" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+
+  <text x="1060" y="295" font-size="13" fill="#6F7E95">22.0</text>
+  <text x="1130" y="295" font-size="13" font-weight="bold" fill="#1E293B">21.0</text>
+  <text x="1200" y="295" font-size="13" fill="#1976D2">1.0</text>
+  <text x="1270" y="295" font-size="13" font-weight="bold" fill="#E65100">8.5h</text>
+  <text x="1340" y="295" font-size="13" font-weight="bold" fill="#FF7A00">22.0 công</text>
+
+  <!-- Row 2: Collins Jackson -->
+  <line x1="32" y1="375" x2="1408" y2="375" stroke="#E5E9EF"/>
+  <text x="48" y="345" font-size="13" font-weight="bold" fill="#1E293B">Collins Jackson (0125)</text>
+  <text x="48" y="363" font-size="11" fill="#6F7E95">Tester Rank 1</text>
+  <text x="270" y="355" font-size="12" fill="#1E293B">PM Số 18</text>
+
+  <rect x="425" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="439" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="460" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="474" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="495" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="509" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="530" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="544" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="565" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="579" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="600" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="614" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="635" y="340" width="28" height="22" rx="4" fill="#FFF3E0"/><text x="649" y="355" font-size="10" font-weight="bold" fill="#E65100" text-anchor="middle">0.5</text>
+  <rect x="670" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="684" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="705" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="719" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="740" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="754" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="775" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="789" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="810" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="824" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="845" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="859" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="880" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="894" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="915" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="929" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+  <rect x="985" y="340" width="28" height="22" rx="4" fill="#EAF7EB"/><text x="999" y="355" font-size="10" font-weight="bold" fill="#2E7D32" text-anchor="middle">1.0</text>
+
+  <text x="1060" y="355" font-size="13" fill="#6F7E95">22.0</text>
+  <text x="1130" y="355" font-size="13" font-weight="bold" fill="#1E293B">21.5</text>
+  <text x="1200" y="355" font-size="13" fill="#6F7E95">0.0</text>
+  <text x="1270" y="355" font-size="13" font-weight="bold" fill="#E65100">4.0h</text>
+  <text x="1340" y="355" font-size="13" font-weight="bold" fill="#FF7A00">21.5 công</text>
+
+</svg>
