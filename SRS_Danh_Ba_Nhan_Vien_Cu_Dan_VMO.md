@@ -82,10 +82,37 @@ Tài liệu này đặc tả chi tiết toàn bộ yêu cầu giao diện ngư�
    * Đặt cạnh thanh tìm kiếm. Chạm vào mở Màn hình Bộ lọc Cơ cấu Tổ chức (`SCR_EMP_002`).
 4. **Sub-header `ALL [ Action v ]`:**
    * Hiển thị nhóm đang xem (Mặc định `ALL` hoặc tên phòng ban đang chọn trong bộ lọc).
-   * Nút `Action [v]`: Cung cấp các thao tác danh sách (Xuất danh bạ sang Excel / Lưu trữ).
-5. **Thẻ nhân viên (Employee Card):**
-   * Hiển thị dạng thẻ bo góc, nền trắng trên nền xám nhạt.
+   * Nút `Action [v]`: Cung cấp các thao tác danh sách:
+     * Chế độ Cư dân thường: Xuất danh bạ sang Excel (`(*) Tải xuống xlsx`).
+     * Chế độ Quản trị HR: Tạo mới, Nạp tập tin, Tải xuống xlsx.
+5. **Thẻ nhân viên (Employee Card) - 2 Chế độ hiển thị:**
+   * **Chế độ Nhân viên thông thường (7 trường):** Họ tên, Bộ phận, Cấp bậc, Vị trí làm việc, Văn phòng làm việc, Giới tính, Quê quán.
+   * **Chế độ Người quản trị (9 trường chuyên sâu - Figma: Ảnh mới Screen 5):**
+     * Nhân viên: `Ian Chesnut - 0123`
+     * Bộ phận: `Trung Tâm PM Số 18`
+     * Cấp bậc: `Nhân Viên`
+     * Vị trí làm việc: `Tester`
+     * Văn phòng làm việc: `IDMC 5`
+     * Giới tính: `Nam`
+     * Ngày sinh: `dd/mm/yyyy`
+     * Quê quán: `Việt Nam`
+     * TT hôn nhân: `Độc thân`
    * Chạm vào bất kỳ thẻ nhân viên nào: Điều hướng sang Màn hình Chi tiết Thông tin Nhân viên (`SCR_EMP_003`).
+
+#### 2.3 Bố cục Action Bottom Sheet Tải xuống xlsx (Figma: Ảnh mới Screen 6)
+Khi người dùng bấm vào nút `[ Action v ]` trên danh bạ Cư dân VMO:
+```
++-------------------------------------------------+
+|                 (Màn hình nền mờ)               |
+|  +-------------------------------------------+  |
+|  |                 [ Thanh gạt ]             |  |
+|  |  Action                                   |  |
+|  |                                           |  |
+|  |  (*) Tải xuống xlsx                       |  |
+|  +-------------------------------------------+  |
++-------------------------------------------------+
+```
+* Khi chọn `(*) Tải xuống xlsx`, hệ thống tự động xuất tệp danh bạ `.xlsx` theo danh sách bộ lọc hiện tại và gửi đường dẫn tải về máy thiết bị.
 
 ---
 

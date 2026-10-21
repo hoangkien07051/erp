@@ -51,14 +51,14 @@ Phân hệ phục vụ trực tiếp cho **Quản trị viên Hệ thống (`ADM
 ```
 +-------------------------------------------------+
 |  [Status Bar: Time, Wifi, Battery]              |
-|  [<]               Cư dân VMO            [🔔 2] |
+|  [≡]               Hợp đồng              [🔔 2] |
 |                                                 |
 |  +-------------------------------------------+  |
 |  | [🔍 Search                               ] |  |
 |  +-------------------------------------------+  |
 |  [ Nút mở Bộ lọc: Ⴘ ]                           |
 |                                                 |
-|  ALL                                 [ Action v ]|
+|  ALL                    [ Action v ] [Thực hiệnv]|
 |                                                 |
 |  +-------------------------------------------+  |
 |  | Loại hợp đồng:      Chính thức            |  |
@@ -68,7 +68,7 @@ Phân hệ phục vụ trực tiếp cho **Quản trị viên Hệ thống (`ADM
 |  | Thời hạn hợp đồng:  5 tháng               |  |
 |  | Ngày bắt đầu:       dd/mm/yyyy            |  |
 |  | Ngày kết thúc:      dd/mm/yyyy            |  |
-|  | Trạng thái:         [ Hiệu lực ]          |  |
+|  | Trạng thái:         [ Đang chạy ] (Xanh)  |  |
 |  +-------------------------------------------+  |
 |                                                 |
 |  +-------------------------------------------+  |
@@ -79,14 +79,14 @@ Phân hệ phục vụ trực tiếp cho **Quản trị viên Hệ thống (`ADM
 |  | Thời hạn hợp đồng:  5 tháng               |  |
 |  | Ngày bắt đầu:       dd/mm/yyyy            |  |
 |  | Ngày kết thúc:      dd/mm/yyyy            |  |
-|  | Trạng thái:         [ Hiệu lực ]          |  |
+|  | Trạng thái:         [ Đã hết hạn ] (Vàng) |  |
 |  +-------------------------------------------+  |
 |                                                 |
 |  +-------------------------------------------+  |
 |  |                  [ Action ]               |  |
-|  |  [+] Tạo mới                              |  |
-|  |  [^] Nạp tập tin (Import Excel)           |  |
-|  |  [v] Tải xuống xlsx (Export Excel)         |  |
+|  |  ( ) Tạo mới                              |  |
+|  |  ( ) Nạp tập tin                          |  |
+|  |  (*) Tải xuống xlsx                       |  |
 |  +-------------------------------------------+  |
 |                [Home Indicator]                 |
 +-------------------------------------------------+
@@ -94,6 +94,8 @@ Phân hệ phục vụ trực tiếp cho **Quản trị viên Hệ thống (`ADM
 
 #### 2.2 Đặc tả các thành phần giao diện & Dữ liệu thẻ hợp đồng
 1. **Header & Thanh tìm kiếm:**
+   * Tiêu đề trung tâm: **`Hợp đồng`** (Font Bold, căn giữa theo thiết kế Figma).
+   * Icon Hamburger `[≡]` mở Sidebar và Icon Chuông thông báo `[🔔]`.
    * Tìm kiếm nhanh theo: Mã hợp đồng, Họ tên nhân viên (`Collins Jackson`), Mã NV (`0125`), Bộ phận (`Trung Tâm PM Số 18`).
 2. **Dữ liệu hiển thị trên thẻ Hợp đồng:**
    * `Loại hợp đồng`: Badge màu phân loại (Chính thức, Thử việc, Học việc, Cộng tác viên).
@@ -102,11 +104,13 @@ Phân hệ phục vụ trực tiếp cho **Quản trị viên Hệ thống (`ADM
    * `Bộ phận`: Trung tâm / Phòng ban trực thuộc (`Trung Tâm PM Số 18`).
    * `Thời hạn hợp đồng`: Thời gian có hiệu lực (`5 tháng`, `1 năm`, `Không thời hạn`).
    * `Ngày bắt đầu` - `Ngày kết thúc`: Định dạng `dd/mm/yyyy`.
-   * `Trạng thái`: Badge trạng thái (Xanh: *Hiệu lực*, Vàng: *Sắp hết hạn*, Đỏ: *Hết hiệu lực*).
+   * `Trạng thái`: 
+     * `[ Đang chạy ]` (Nền xanh lá, chữ trắng): Hợp đồng đang trong thời gian hiệu lực.
+     * `[ Đã hết hạn ]` (Nền vàng cam, chữ trắng): Hợp đồng đã quá hạn kết thúc cần ký phụ lục hoặc gia hạn.
 3. **Menu Action Sheet:**
-   * `Tạo mới`: Điều hướng sang màn hình khởi tạo hợp đồng lao động mới.
-   * `Nạp tập tin`: Import hàng loạt hợp đồng từ file bảng tính Excel (`.xlsx`).
-   * `Tải xuống xlsx`: Xuất danh sách hợp đồng kèm điều kiện lọc ngày tháng ra Excel.
+   * `( ) Tạo mới`: Điều hướng sang màn hình khởi tạo hợp đồng lao động mới.
+   * `( ) Nạp tập tin`: Import hàng loạt hợp đồng từ file bảng tính Excel (`.xlsx`).
+   * `(*) Tải xuống xlsx`: Xuất danh sách hợp đồng kèm điều kiện lọc ngày tháng ra Excel.
 
 ---
 
@@ -118,19 +122,19 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 ```
 +-------------------------------------------------+
 |  [Status Bar]                                   |
-|  [<]               Cư dân VMO            [🔔 2] |
+|  [<]               Hợp đồng              [🔔 2] |
 |                                                 |
 |  +-------------------------------------------+  |
 |  | [🔍 Search                               ] |  |
 |  +-------------------------------------------+  |
 |  [ Nút mở Bộ lọc: Ⴘ ]                           |
 |                                                 |
-|  Thông tin                           [ Action v ]|
-|                                      [ Thực hiện]|
+|  Thông tin           [ Action v ] [Thực hiện v] |
+|                                                 |
 |  +-------------------------------------------+  |
 |  | Nhân viên:          Collins Jackson - 0125|  |
-|  | Vị trí làm việc:    Tester                |  |
 |  | Bộ phận:            Trung Tâm PM Số 18    |  |
+|  | Vị trí làm việc:    Tester                |  |
 |  | Lương chính thức:   0,00                  |  |
 |  | Mức đóng BHXH:      0                     |  |
 |  | Phụ lục HĐ:         0                     |  |
@@ -140,7 +144,7 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 |  | Số ngày hiệu lực HĐ:212                   |  |
 |  | Hình thức lương:    (Trống)               |  |
 |  | Thời gian làm việc: Tiêu chuẩn 40 giờ/tuần|  |
-|  | Trạng thái:         [ Hiệu lực ]          |  |
+|  | Trạng thái:         [ Đang chạy ]         |  |
 |  +-------------------------------------------+  |
 |                                                 |
 |  +-------------------------------------------+  |
@@ -150,7 +154,7 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 |  +-------------------------------------------+  |
 |                                                 |
 |  +---------------------+ +--------------------+ |
-|  |      [  XÓA  ]      | |     [  SỬA  ]      | |
+|  |      [  SỬA  ]      | |     [  TẠO  ]      | |
 |  +---------------------+ +--------------------+ |
 |                [Home Indicator]                 |
 +-------------------------------------------------+
@@ -160,8 +164,8 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 | STT | Trường thông tin | Giá trị hiển thị mẫu Figma | Kiểu dữ liệu | Ý nghĩa nghiệp vụ |
 | :---: | :--- | :--- | :---: | :--- |
 | 1 | **Nhân viên** | `Collins Jackson - 0125` | String | Nhân sự đứng tên ký kết hợp đồng. |
-| 2 | **Vị trí làm việc** | `Tester` | String | Vị trí công tác theo điều khoản hợp đồng. |
-| 3 | **Bộ phận** | `Trung Tâm PM Số 18` | String | Đơn vị quản lý trực tiếp. |
+| 2 | **Bộ phận** | `Trung Tâm PM Số 18` | String | Đơn vị quản lý trực tiếp. |
+| 3 | **Vị trí làm việc** | `Tester` | String | Vị trí công tác theo điều khoản hợp đồng. |
 | 4 | **Lương chính thức** | `0,00` | Decimal (VND) | Mức lương cơ bản thỏa thuận ghi trên hợp đồng. |
 | 5 | **Mức đóng BHXH** | `0` | Decimal (VND) | Mức lương làm căn cứ trích đóng BHXH, BHYT, BHTN. |
 | 6 | **Phụ lục HĐ** | `0` | Integer | Số lượng văn bản phụ lục điều chỉnh đã ký kết. |
@@ -171,37 +175,53 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 | 10 | **Số ngày hiệu lực HĐ**| `212` | Integer (Days) | Số ngày tính từ ngày bắt đầu đến ngày kết thúc HĐ. |
 | 11 | **Hình thức lương** | `(Trống)` | String | Lương Net, Lương Gross hoặc Lương khoán. |
 | 12 | **Thời gian làm việc** | `Tiêu chuẩn 40 giờ / tuần`| String | Chế độ làm việc quy chuẩn (Thứ 2 đến Thứ 6). |
-| 13 | **Trạng thái** | `Hiệu lực` | Enum Badge | Trạng thái pháp lý của hợp đồng. |
+| 13 | **Trạng thái** | `Đang chạy` | Enum Badge | Trạng thái pháp lý của hợp đồng (Xanh: Đang chạy, Vàng: Đã hết hạn). |
+
+* **Cụm nút Sticky Action Bar chân trang:**
+  * Nút `[ SỬA ]`: Nền trắng viền cam, chữ cam VMO. Dùng để mở khóa form chỉnh sửa các điều khoản.
+  * Nút `[ TẠO ]`: Nền cam VMO, chữ trắng. Dùng để lưu lại hợp đồng mới hoặc phát hành bản hợp đồng có hiệu lực.
 
 ---
 
 ### MÀN HÌNH 4 & 5: CÁC KHỐI ACCORDION MỞ RỘNG (`SCR_CON_004` & `SCR_CON_005`)
 
 #### 4.1 Accordion: Chi tiết hợp đồng & Ghi chú (Figma: Frame 4)
+Khi người dùng bấm vào accordion `Chi tiết hợp đồng`:
 ```
 +-------------------------------------------------+
 |  [v] Chi tiết hợp đồng                          |
 |  +-------------------------------------------+  |
-|  | Ghi chú:                                  |  |
+|  | Ghi chú                                   |  |
 |  | +---------------------------------------+ |  |
-|  | | [Nhập các điều khoản thỏa thuận bổ    | |  |
-|  | |  sung hoặc phụ cấp đặc thù...]        | |  |
+|  | | Type your message here                | |  |
+|  | |                                       | |  |
 |  | +---------------------------------------+ |  |
 |  +-------------------------------------------+  |
+|  > Thông tin lương                              |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |      [  SỬA  ]      | |     [  TẠO  ]      | |
+|  +---------------------+ +--------------------+ |
 +-------------------------------------------------+
 ```
 
 #### 4.2 Accordion: Đãi ngộ hàng năm & Thông tin lương (Figma: Frame 5)
+Khi người dùng bấm vào accordion `Thông tin lương`:
 ```
 +-------------------------------------------------+
-|  [v] Đãi ngộ hàng năm & Thông tin lương         |
+|  > Chi tiết hợp đồng                            |
+|  [v] Thông tin lương                            |
 |  +-------------------------------------------+  |
-|  | Thưởng tháng 13:    Theo kết quả kinh doanh|  |
-|  | Phụ cấp ăn trưa:    Có (Tiền mặt / Thẻ)   |  |
-|  | Bảo hiểm sức khỏe:  Gói VMO Care Premium  |  |
-|  | Khám sức khỏe:      1 lần / năm           |  |
-|  | Du lịch / Teambuilding: Có                |  |
+|  | Đãi ngộ hàng năm                          |  |
+|  | +---------------------------------------+ |  |
+|  | | Type your message here                | |  |
+|  | |                                       | |  |
+|  | +---------------------------------------+ |  |
 |  +-------------------------------------------+  |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |      [  SỬA  ]      | |     [  TẠO  ]      | |
+|  +---------------------+ +--------------------+ |
 +-------------------------------------------------+
 ```
 
@@ -210,7 +230,7 @@ Khi chạm vào một hợp đồng từ danh sách, hệ thống mở màn hìn
 ### MÀN HÌNH 6 & 7: MENU TÁC VỤ & IN ẤN PHÁP LÝ HỢP ĐỒNG (`SCR_CON_006` & `SCR_CON_007`)
 
 #### 5.1 Popup Menu `Thực hiện` Tiêu chuẩn (Figma: Frame 6)
-Khi người dùng bấm vào nút `[ Thực hiện ]`:
+Khi Quản trị viên bấm vào nút `[ Thực hiện v ]` trên màn hình:
 ```
 +-------------------------------------------------+
 |                 (Màn hình nền mờ)               |
@@ -218,16 +238,16 @@ Khi người dùng bấm vào nút `[ Thực hiện ]`:
 |  |                 [ Thanh gạt ]             |  |
 |  |  Thực hiện                                |  |
 |  |                                           |  |
-|  |  [🖨️] In                                  |  |
-|  |  [📦] Lưu trữ                             |  |
-|  |  [📄] Nhân bản                            |  |
-|  |  [🗑️] Xóa                                 |  |
+|  |  (*) In                                   |  |
+|  |  ( ) Lưu trữ                             |  |
+|  |  ( ) Nhân bản                            |  |
+|  |  ( ) Xóa                                 |  |
 |  +-------------------------------------------+  |
 +-------------------------------------------------+
 ```
 
 #### 5.2 Popup Menu In ấn Pháp lý Chuyên sâu (Figma: Frame 7)
-Khi Quản trị viên chọn lệnh In hoặc mở Menu văn bản pháp lý chuyên sâu:
+Khi Quản trị viên chọn lệnh In hoặc xem menu hành động chuyên sâu:
 ```
 +-------------------------------------------------+
 |                 (Màn hình nền mờ)               |
@@ -235,9 +255,9 @@ Khi Quản trị viên chọn lệnh In hoặc mở Menu văn bản pháp lý ch
 |  |                 [ Thanh gạt ]             |  |
 |  |  Thực hiện                                |  |
 |  |                                           |  |
-|  |  [📄] In HĐ thử việc                      |  |
-|  |  [🔒] In HĐ bảo mật thông tin             |  |
-|  |  [📅] Tạo nghỉ phép năm                   |  |
+|  |  (*) In HĐ thử việc                       |  |
+|  |  ( ) In HĐ bảo mật thông tin              |  |
+|  |  ( ) Tạo nghỉ phép năm                    |  |
 |  +-------------------------------------------+  |
 +-------------------------------------------------+
 ```
@@ -255,12 +275,13 @@ Khi Quản trị viên chọn lệnh In hoặc mở Menu văn bản pháp lý ch
 ### MÀN HÌNH 8 & 9: DANH SÁCH CƠ CẤU PHÒNG BAN & ĐƠN VỊ (`SCR_DEPT_001` & `SCR_DEPT_002`)
 
 #### 6.1 Bố cục giao diện Mobile (Figma: Frame 8 & 9 - $375 \times 812$)
+#### 6.1 Bố cục giao diện Mobile (Figma: Frame 8 & 9 - $375 \times 812$)
 Quản trị viên chuyển sang tab hoặc chế độ quản lý Cơ cấu Phòng ban:
 
 ```
 +-------------------------------------------------+
-|  [Status Bar]                                   |
-|  [<]               Cơ cấu đơn vị         [🔔 2] |
+|  [Status Bar: Time, Wifi, Battery]              |
+|  [≡]                 Bộ phận             [🔔 2] |
 |                                                 |
 |  +-------------------------------------------+  |
 |  | [🔍 Search                               ] |  |
@@ -282,6 +303,12 @@ Quản trị viên chuyển sang tab hoặc chế độ quản lý Cơ cấu Ph�
 |  +-------------------------------------------+  |
 |                                                 |
 |  +-------------------------------------------+  |
+|  | Tên hiển thị:       Tester                |  |
+|  | Người quản lý:      Admin - 0000          |  |
+|  | Bộ phận cấp trên:   Global                |  |
+|  +-------------------------------------------+  |
+|                                                 |
+|  +-------------------------------------------+  |
 |  | Tên hiển thị:       Sale Japan            |  |
 |  | Người quản lý:      Admin - 0000          |  |
 |  | Bộ phận cấp trên:   Phòng Sale            |  |
@@ -289,9 +316,9 @@ Quản trị viên chuyển sang tab hoặc chế độ quản lý Cơ cấu Ph�
 |                                                 |
 |  +-------------------------------------------+  |
 |  |                  [ Action ]               |  |
-|  |  [+] Tạo mới                              |  |
-|  |  [^] Nạp tập tin                          |  |
-|  |  [v] Tải xuống xlsx                       |  |
+|  |  ( ) Tạo mới                              |  |
+|  |  ( ) Nạp tập tin                          |  |
+|  |  (*) Tải xuống xlsx                       |  |
 |  +-------------------------------------------+  |
 |                [Home Indicator]                 |
 +-------------------------------------------------+
@@ -307,17 +334,22 @@ Khi bấm vào xem chi tiết một đơn vị/phòng ban (Ví dụ: `Bộ phậ
 ```
 +-------------------------------------------------+
 |  [Status Bar]                                   |
-|  [<]               Bộ phận C&B           [🔔 2] |
+|  [≡]                 Bộ phận             [🔔 2] |
+|                                                 |
+|  +-------------------------------------------+  |
+|  | [🔍 Search                               ] |  |
+|  +-------------------------------------------+  |
+|  [ Nút mở Bộ lọc: Ⴘ ]                           |
 |                                                 |
 |  Bộ phận C&B                         [ Thực hiện]|
 |                                                 |
 |  +-------------------------------------------+  |
 |  | Tên bộ phận:        Bộ phận C&B           |  |
-|  | Tên rút gọn:        C&B                   |  |
-|  | Mã bộ phận:         C&B                   |  |
 |  | Email:              (Trống)               |  |
 |  | Đơn vị phát triển:  Có                    |  |
 |  | Vendor:             Không                 |  |
+|  | Tên rút gọn:        C&B                   |  |
+|  | Mã bộ phận:         C&B                   |  |
 |  | Bộ phận cấp trên:   Phòng Nhân Sự         |  |
 |  | Người quản lý:      Admin - 0000          |  |
 |  | Phó QL phụ trách công: (Trống)            |  |
@@ -325,16 +357,20 @@ Khi bấm vào xem chi tiết một đơn vị/phòng ban (Ví dụ: `Bộ phậ
 |  | Văn phòng:          TYT8                  |  |
 |  | Mô tả ngắn gọn:                           |  |
 |  | +---------------------------------------+ |  |
-|  | | [Nhập mô tả chức năng nhiệm vụ...]    | |  |
+|  | | Type your message here                | |  |
 |  | +---------------------------------------+ |  |
 |  +-------------------------------------------+  |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |      [  SỬA  ]      | |     [  TẠO  ]      | |
+|  +---------------------+ +--------------------+ |
 |                                                 |
 |  +-------------------------------------------+  |
 |  |                 [ Thanh gạt ]             |  |
 |  |  Thực hiện                                |  |
 |  |                                           |  |
-|  |  [📄] Nhân bản                            |  |
-|  |  [🗑️] Xóa                                 |  |
+|  |  ( ) Nhân bản                             |  |
+|  |  (*) Xóa                                  |  |
 |  +-------------------------------------------+  |
 |                [Home Indicator]                 |
 +-------------------------------------------------+
