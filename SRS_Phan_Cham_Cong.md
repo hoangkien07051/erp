@@ -8,7 +8,7 @@
 | **Tên phân hệ** | Phân hệ Quản lý Chấm công (Attendance & Timesheet System) |
 | **Dự án** | VMO ERP System |
 | **Nền tảng** | iOS & Android (Mobile App) + Backend Microservices |
-| **Tệp thiết kế nguồn** | `ERP - App.fig` (Frame: `Chấm công - Nhân viên`, `Giải trình`, `Đơn đăng ký bổ sung công`, `Đăng ký bổ sung công`, `Phê duyệt chấm công - người quản trị`, `Báo cáo chấm công - Người quản trị`, `WFH - Nhân viên`, `Tạo WFH/ On-site khác`, `Phê duyệt WFH/ On-site khác`, `Cấu hình máy chấm công`) |
+| **Tệp thiết kế nguồn** | `ERP - App.fig` (Frame: `Chấm công - Nhân viên`, `Giải trình`, `Đơn đăng ký bổ sung công`, `Đăng ký bổ sung công`, `Phê duyệt chấm công - người quản trị`, `Báo cáo chấm công - Người quản trị`, `WFH - Nhân viên`, `Tạo WFH/ On-site khác`, `Phê duyệt WFH/ On-site khác`, `Cấu hình máy chấm công`) |
 | **Phiên bản SRS** | 2.0 (Bản hoàn chỉnh tích hợp 8 chức năng) |
 | **Ngày cập nhật** | 21/10/2026 |
 | **Trạng thái** | Sẵn sàng triển khai (Ready for Dev/QA) |
@@ -34,7 +34,7 @@ Tài liệu này đặc tả chi tiết toàn bộ yêu cầu giao diện (UI/UX
 
 ## 2. CHỨC NĂNG 1: BẢNG CHẤM CÔNG & LỊCH CÔNG CÁ NHÂN (`SCR_ATT_001`)
 
-### 2.1 Bố cục giao diện Mobile (Figma: `Chấm công - Nhân viên`)
+### 2.1 Bố cục giao diện Mobile (Figma: `Chấm công - Nhân viên`)
 ```
 +-------------------------------------------------+
 |  [Status Bar: Time, Wifi, Battery]              |
@@ -478,7 +478,7 @@ Khi Quản lý bấm nút `[ PHÊ DUYỆT ]`, hệ thống mở Modal phê duy�
 
 ## 7. CHỨC NĂNG 6: ĐĂNG KÝ & PHÊ DUYỆT LÀM VIỆC TỪ XA (WFH / ON-SITE) (`SCR_ATT_006`)
 
-### 7.1 Bố cục giao diện Mobile (Figma: `WFH - Nhân viên` & `Tạo WFH/ On-site khác`)
+### 7.1 Bố cục giao diện Mobile Đăng ký WFH của Nhân viên (Figma: `WFH - Nhân viên` & `Tạo WFH/ On-site khác`)
 ```
 +-------------------------------------------------+
 |  [Status Bar]                                   |
@@ -514,6 +514,103 @@ Khi Quản lý bấm nút `[ PHÊ DUYỆT ]`, hệ thống mở Modal phê duy�
 +-------------------------------------------------+
 ```
 
+#### 7.1.1 Bố cục Form Tạo On-site Khối Sản xuất - Người quản trị (Figma: Hàng 1 - Màn 14 & 15)
+Dành cho Quản lý dự án (PM) cử nhân sự làm việc trực tiếp tại trụ sở đối tác / khách hàng:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]       Tạo On-site khối sản xuất     [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  ADMIN                               [ Action v ]|
+|                                                 |
+|  Phân loại khối *                               |
+|  (o) Khối Sản xuất      ( ) Khối Backoffice     |
+|                                                 |
+|  Chọn Dự án cử đi On-site *                     |
+|  [ VMO227 - VMO ERP Mobile                 [v] ]|
+|                                                 |
+|  Khách hàng & Địa điểm On-site *                |
+|  [ Văn phòng Khách hàng Keangnam Landmark 72 [v]|
+|                                                 |
+|  Thời gian On-site *                            |
+|  Từ ngày: [ 27/12/2021 📅 ] Đến:[ 31/12/2021 📅 ]|
+|  Thời lượng: 5.0 Ngày làm việc                  |
+|                                                 |
+|  Danh sách nhân sự tham gia On-site *           |
+|  [+] Thêm nhân viên (Đã chọn: 2 nhân sự)        |
+|  - Ian Chesnut - 0123 (Tester)                  |
+|  - Jane Bonde - 0124 (Developer)                |
+|                                                 |
+|  Lý do & Nhiệm vụ On-site *                     |
+|  [ Phối hợp UAT và Go-live hệ thống tại chỗ[v] ]|
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |        LƯU         | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet On-site (Màn 15):** `(o) Chuyển về nháp`.
+
+#### 7.1.2 Bố cục Màn hình Phê duyệt WFH / On-site khác (Figma: Hàng 1 - Màn 17 & 18)
+Màn hình tập trung dành cho Quản lý thẩm định các yêu cầu làm việc từ xa:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]         Phê duyệt WFH/ On-site khác [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  ADMIN                               [ Action v ]|
+|                                                 |
+|  22/12/2021                                     |
+|  Nhân viên:            Ian Chesnut - 0123       |
+|  Khối yêu cầu:         Khối Sản xuất            |
+|  Hình thức:            WFH (Tại nhà)            |
+|  Thời gian:            22/12/2021 - 24/12/2021  |
+|  Thời lượng:           3.0 Ngày                 |
+|  Lý do:                Sức khỏe cần cách ly     |
+|  Trạng thái:           [ Chờ phê duyệt ]        |
+|  +---------------------+ +--------------------+ |
+|  |       TỪ CHỐI       | |     PHÊ DUYỆT      | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet Phê duyệt WFH/On-site (Màn 18):** `(o) Tải xuống xlsx`.
+
+#### 7.1.3 Bố cục Màn hình Bộ lọc WFH / On-site (Figma: Hàng 1 - Màn 16)
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [<]             Bộ lọc WFH / On-site           |
+|                                                 |
+|  Hình thức làm việc                             |
+|  [ Tất cả (WFH & On-site)                   [v] ]|
+|                                                 |
+|  Khối yêu cầu                                   |
+|  [ Khối Sản xuất                            [v] ]|
+|                                                 |
+|  Dự án / Phòng ban                              |
+|  [ Trung tâm PM Số 18                       [v] ]|
+|                                                 |
+|  Khoảng thời gian                               |
+|  Từ ngày: [ dd/mm/yyyy 📅 ] Đến: [ dd/mm/yyyy 📅]|
+|                                                 |
+|  Trạng thái phê duyệt                           |
+|  [ ] Chờ duyệt                                  |
+|  [ ] Đã phê duyệt                               |
+|  [ ] Bị từ chối                                 |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |      ÁP DỤNG       | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+
 ### 7.2 Quy tắc nghiệp vụ WFH & Tự động ghi nhận công (Business Rules)
 * **BR-WFH-01 (Tự động ghi nhận công):** Khi đơn WFH hoặc On-site được Quản lý duyệt:
   * Hệ thống tự động đánh dấu ngày công tương ứng là `WFH_APPROVED` hoặc `ONSITE_APPROVED`.
@@ -523,9 +620,9 @@ Khi Quản lý bấm nút `[ PHÊ DUYỆT ]`, hệ thống mở Modal phê duy�
 
 ---
 
-## 8. CHỨC NĂNG 7: QUẢN LÝ & CẤU HÌNH THIẾT BỊ MÁY CHẤM CÔNG (`SCR_ATT_007`)
+## 8. CHỨC NĂNG 7: QUẢN LÝ THIẾT BỊ MÁY CHẤM CÔNG & CẤU HÌNH CA LÀM VIỆC (`SCR_ATT_007`)
 
-### 8.1 Bố cục giao diện Mobile (Figma: `Cấu hình máy chấm công`)
+### 8.1 Bố cục giao diện Danh sách Thiết bị (Figma: `Cấu hình máy chấm công`)
 ```
 +-------------------------------------------------+
 |  [Status Bar]                                   |
@@ -556,6 +653,68 @@ Khi Quản lý bấm nút `[ PHÊ DUYỆT ]`, hệ thống mở Modal phê duy�
 +-------------------------------------------------+
 ```
 
+#### 8.1.1 Bố cục Form Chi tiết Thêm mới / Cập nhật Thiết bị (Figma: Hàng 2 - Màn 4)
+Khi bấm nút `[+ Thêm]` hoặc chọn 1 máy chấm công để sửa:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [<]             Chi tiết thiết bị              |
+|                                                 |
+|  Tên máy chấm công *                            |
+|  [ Máy chấm công Tầng 5 - IDMC 5              ] |
+|                                                 |
+|  Địa chỉ IP thiết bị *                          |
+|  [ 192.168.1.105                              ] |
+|                                                 |
+|  Cổng kết nối (Port) *                          |
+|  [ 4370                                       ] |
+|                                                 |
+|  Vị trí lắp đặt / Tòa nhà *                     |
+|  [ Tòa nhà IDMC 5 - Tầng 5                    ] |
+|                                                 |
+|  Trạng thái hoạt động                           |
+|  [X] Kích hoạt kết nối realtime                 |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |    LƯU THIẾT BỊ    |  |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+
+#### 8.1.2 Bố cục Màn hình Cấu hình Ca làm việc chuẩn (Figma: Hàng 2 - Màn 6)
+Dành cho HR thiết lập quy định thời gian làm việc toàn hệ thống:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [<]            Cấu hình ca làm việc            |
+|                                                 |
+|  CA SÁNG                                        |
+|  Giờ vào chuẩn: [ 08:30 🕒 ]  Giờ ra: [ 12:00 🕒]|
+|  Thời lượng ca sáng: 3.5 giờ                    |
+|                                                 |
+|  NGHỈ TRƯA                                      |
+|  Từ giờ: [ 12:00 🕒 ]         Đến giờ:[ 13:30 🕒]|
+|  Thời lượng nghỉ trưa: 1.5 giờ                  |
+|                                                 |
+|  CA CHIỀU                                       |
+|  Giờ vào chuẩn: [ 13:30 🕒 ]  Giờ ra: [ 18:00 🕒]|
+|  Thời lượng ca chiều: 4.5 giờ                   |
+|                                                 |
+|  QUY TẮC ÂN HẠN & MÃ LỖI VI PHẠM                |
+|  Thời gian ân hạn không phạt: [ 5 ] phút        |
+|  (Cho phép check-in đến 08:35:59)               |
+|                                                 |
+|  Khung giờ cảnh báo lỗi M836:                   |
+|  Từ: [ 08:36:00 ]             Đến: [ 09:00:00 ] |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |    LƯU CẤU HÌNH    |  |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+
 ### 8.2 Nghiệp vụ Quản lý & Đồng bộ thiết bị
 * Phục vụ quản trị viên IT / HR giám sát tình trạng máy chấm công đặt tại các văn phòng.
 * Hỗ trợ nạp file `.xlsx` khi đường truyền mạng tại văn phòng bị ngắt quãng, đảm bảo dữ liệu quẹt thẻ của nhân viên không bị mất.
@@ -564,7 +723,7 @@ Khi Quản lý bấm nút `[ PHÊ DUYỆT ]`, hệ thống mở Modal phê duy�
 
 ## 9. CHỨC NĂNG 8: THẢO LUẬN & KHIẾU NẠI TRÊN BẢN GHI CHẤM CÔNG (`SCR_ATT_008`)
 
-### 9.1 Bố cục giao diện Mobile (Figma: Mục `Thảo luận` trong `Chấm công - Nhân viên`)
+### 9.1 Bố cục giao diện Mobile (Figma: Mục `Thảo luận` trong `Chấm công - Nhân viên`)
 ```
 +-------------------------------------------------+
 |  --- THẢO LUẬN & KHIẾU NẠI NGÀY 20/12/2021 ---  |

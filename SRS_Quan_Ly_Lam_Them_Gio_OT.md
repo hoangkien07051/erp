@@ -31,7 +31,7 @@ Tài liệu này đặc tả chi tiết toàn bộ yêu cầu giao diện (UI/UX
 
 ## 2. CHỨC NĂNG 1 & 2: ĐĂNG KÝ & TẠO ĐƠN LÀM THÊM GIỜ (`SCR_OT_001` & `SCR_OT_002`)
 
-### 2.1 Bố cục giao diện Mobile (Figma: `Đăng kí làm thêm giờ` & `Tạo OT`)
+### 2.1 Bố cục giao diện Mobile Đăng ký OT Cá nhân (Figma: `Đăng kí làm thêm giờ`)
 ```
 +-------------------------------------------------+
 |  [Status Bar: Time, Wifi, Battery]              |
@@ -83,6 +83,77 @@ Tài liệu này đặc tả chi tiết toàn bộ yêu cầu giao diện (UI/UX
 +-------------------------------------------------+
 ```
 
+#### 2.1.1 Bố cục Form Tạo OT Khối Backoffice (Figma: Hàng 1 - Màn 6 & 7)
+Dành cho Quản trị viên / Trưởng bộ phận khối văn phòng (HR, Kế toán, IT Helpdesk, Hành chính) tạo đơn OT:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]             Tất cả OT Backoffice    [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  ADMIN                               [ Action v ]|
+|                                                 |
+|  Phân loại khối *                               |
+|  ( ) Khối Sản xuất      (o) Khối Backoffice     |
+|                                                 |
+|  Đơn vị / Phòng ban *                           |
+|  [ Ban Tài chính Kế toán                   [v] ]|
+|                                                 |
+|  Lý do OT *                                     |
+|  [ Khóa sổ kế toán & Quyết toán thuế       [v] ]|
+|                                                 |
+|  Ngày làm thêm giờ *                            |
+|  [ 31/12/2021                              📅 ] |
+|                                                 |
+|  Từ giờ *                  Đến giờ *            |
+|  [ 18:00            🕒 ]  [ 22:00           🕒 ]|
+|                                                 |
+|  Thời lượng: 4.0 Giờ                            |
+|                                                 |
+|  Danh sách nhân viên tham gia *                 |
+|  [+] Thêm nhân viên (Đã chọn: 2 nhân viên)      |
+|  - Nguyễn Thị D (Kế toán tổng hợp)              |
+|  - Trần Văn E (Kế toán thuế)                    |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |        LƯU         | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet Backoffice (Màn 7):** `(o) Chuyển về nháp`.
+
+#### 2.1.2 Bố cục Màn hình Bộ lọc OT Chuyên sâu (Figma: Hàng 1 - Màn 1)
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [<]                 Bộ lọc OT                  |
+|                                                 |
+|  Phân loại khối                                 |
+|  [ Tất cả (Sản xuất & Backoffice)           [v] ]|
+|                                                 |
+|  Dự án / Phòng ban                              |
+|  [ Trung tâm PM Số 18                       [v] ]|
+|                                                 |
+|  Khoảng thời gian                               |
+|  Từ ngày: [ dd/mm/yyyy 📅 ] Đến: [ dd/mm/yyyy 📅]|
+|                                                 |
+|  Cấp phê duyệt                                  |
+|  [ ] Chờ PM duyệt                               |
+|  [ ] Chờ DUL duyệt                              |
+|  [ ] Chờ PMO duyệt                              |
+|  [ ] Chờ CHRO duyệt                             |
+|  [ ] Đã phê duyệt hoàn tất                      |
+|  [ ] Bị từ chối                                 |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       HỦY BỎ        | |      ÁP DỤNG       | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+
 ### 2.2 Quy tắc tính hệ số lương OT theo Luật Lao động (Business Rules)
 * **BR-OT-01 (Hệ số nhân lương theo ngày):**
   * **Làm thêm vào Ngày thường:** Hệ số nhân **`150%`** (1.5x đơn giá lương giờ).
@@ -98,79 +169,122 @@ Tài liệu này đặc tả chi tiết toàn bộ yêu cầu giao diện (UI/UX
 
 ---
 
-## 3. CHỨC NĂNG 3: PHÊ DUYỆT LÀM THÊM GIỜ (`SCR_OT_003`)
+## 3. CHỨC NĂNG 3: QUY TRÌNH PHÊ DUYỆT OT ĐA CẤP ĐỘ (`SCR_OT_003`)
 
-### 3.1 Bố cục giao diện Mobile (Figma: `Phê duyệt OT- người quản trị`)
+Quy trình xét duyệt đơn làm thêm giờ tại VMO được phân cấp nghiêm ngặt theo 3 cấp thẩm quyền:
+$$	ext{PM tạo / duyệt} \longrightarrow 	ext{DUL phê duyệt} \longrightarrow 	ext{PMO thẩm định ngân sách} \longrightarrow 	ext{CHRO phê duyệt}$$
+
+### 3.1 Cấp 1: Phê duyệt OT cấp Quản lý Dự án (PM / Lead) (Figma: `Phê duyệt OT- người quản trị`)
 ```
 +-------------------------------------------------+
 |  [Status Bar]                                   |
-|  [<]             Phê duyệt OT             [Search]|
-|                                                 |
-|  [ Chờ duyệt (8) ]  [ Đã duyệt ]  [ Từ chối ]   |
-|                                                 |
-|  +-------------------------------------------+  |
-|  | [Tag: Khối Sản xuất] Dự án VMO ERP Mobile |  |
-|  | Ngày OT: 25/12/2021 (Thứ 7) - Hệ số: 200%  |  |
-|  | Khung giờ: 09:00 - 18:00 (8.0 giờ)         |  |
-|  | Số nhân sự tham gia: 3 nhân sự             |  |
-|  | - Vũ Thanh Tùng (VMO1409)                  |  |
-|  | - Trần Thị B (VMO1520)                     |  |
-|  | - Lê Văn C (VMO1602)                       |  |
-|  | Lý do: Release bản gấp theo yêu cầu KH     |  |
-|  | Người tạo đơn: Nguyễn Quốc Anh - PM        |  |
-|  |                                           |  |
-|  |    [   TỪ CHỐI   ]       [   PHÊ DUYỆT   ]    |  |
-|  +-------------------------------------------+  |
-|                [Home Indicator]                 |
-+-------------------------------------------------+
-```
-
-#### 3.1.1 Grid Dashboard Người quản trị gồm 18 thẻ chức năng (Figma: Ảnh 3 - Màn 2)
-Cung cấp cổng điều hướng tập trung cho các cấp lãnh đạo (Lead, PM, ĐUL, PMO, CHRO):
-```
-+-------------------------------------------------+
-|  [Status Bar]                                   |
-|  [≡]               Chấm công             [🔔 2] |
+|  [≡]             Phê duyệt OT            [🔔 2] |
 |                                                 |
 |  [🔍 Search                                 [v] ]|
 |                                                 |
-|  [ Icon 1 ]           [ Icon 2 ]                |
-|  Chấm công            Phê duyệt chấm công       |
+|  ADMIN                               [ Action v ]|
 |                                                 |
-|  [ Icon 3 ]           [ Icon 4 ]                |
-|  Tổng quan ngày nghỉ  Xin nghỉ phép             |
-|                                                 |
-|  [ Icon 5 ]           [ Icon 6 ]                |
-|  Quản lý ngày nghỉ    Yêu cầu OT khối sản xuất  |
-|                                                 |
-|  [ Icon 7 ]           [ Icon 8 ]                |
-|  ĐUL phê duyệt SX     PMO phê duyệt SX          |
-|                                                 |
-|  [ Icon 9 ]           [ Icon 10 ]               |
-|  CHRO phê duyệt OT    Yêu cầu OT Backoffice     |
-|                                                 |
-|  [ Icon 11 ]          [ Icon 12 ]               |
-|  Phê duyệt OT BO      Yêu cầu On-site khối khác |
-|                                                 |
-|  [ Icon 13 ]          [ Icon 14 ]               |
-|  ĐUL phê duyệt Onsite PMO phê duyệt Onsite      |
-|                                                 |
-|  [ Icon 15 ]          [ Icon 16 ]               |
-|  Phê duyệt WFH/Onsite Yêu cầu WFH/Onsite        |
-|                                                 |
-|  [ Icon 17 ]          [ Icon 18 ]               |
-|  Báo cáo chấm công    Báo cáo Overtime          |
+|  25/12/2021                                     |
+|  Dự án:                VMO ERP Mobile           |
+|  Số nhân sự:           3 nhân viên              |
+|  Khung giờ:            09:00 - 18:00 (8.0 giờ)  |
+|  Lý do OT:             Release bản gấp          |
+|  Trạng thái:           [ Chờ PM duyệt ]         |
+|  +---------------------+ +--------------------+ |
+|  |       TỪ CHỐI       | |     PHÊ DUYỆT      | |
+|  +---------------------+ +--------------------+ |
 |                [Home Indicator]                 |
 +-------------------------------------------------+
 ```
 
-### 3.2 Quy tắc Phê duyệt OT
-* **Điều kiện bắt buộc:** Đơn OT phải được tạo và phê duyệt **trước** khi thời gian làm việc thực tế diễn ra (hoặc muộn nhất là trong vòng 24 giờ sau khi kết thúc buổi làm thêm kèm lý do đột xuất).
-* Khi duyệt: Hệ thống ghi nhận trạng thái `APPROVED`, đồng bộ dữ liệu sang phân hệ Chấm công và bảng tổng hợp lương tháng của Kế toán.
+### 3.2 Cấp 2: Màn hình DUL Phê duyệt Khối Sản xuất (Figma: Hàng 1 - Màn 8 & 9)
+Dành cho Delivery Unit Leader (Giám đốc Đơn vị Sản xuất - `DUL - 2611`) phê duyệt tổng thể các dự án thuộc DU:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]       DUL phê duyệt khối sản xuất   [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  DUL - 2611                          [ Action v ]|
+|                                                 |
+|  Dự án:                VMO227 - VMO ERP         |
+|  PM đề xuất:           Nguyễn Quốc Anh (anhnq2) |
+|  Ngày làm thêm:        27/09/2021               |
+|  Tổng số giờ OT:       18.5 giờ (3 thành viên)  |
+|  Phân loại:            OT9 - In Plan            |
+|  Trạng thái:           [ Chờ DUL duyệt ]        |
+|  +---------------------+ +--------------------+ |
+|  |       TỪ CHỐI       | |     PHÊ DUYỆT      | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet DUL (Màn 9):** `(o) Báo cáo OT`, `(o) Tải xuống xlsx`.
+
+### 3.3 Cấp 3: Màn hình PMO Phê duyệt Khối Sản xuất (Figma: Hàng 1 - Màn 10 & 11)
+Ban Quản lý Dự án (PMO) thẩm định tính hợp lệ chi phí, đối soát ngân sách và hóa đơn thanh toán từ khách hàng:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]       PMO phê duyệt khối sản xuất   [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  PMO Admin                           [ Action v ]|
+|                                                 |
+|  Bộ phận quản lý:      Global                   |
+|  Tên dự án:            VMO227 - VMO ERP         |
+|  Lý do OT:             OT9 - In Plan            |
+|  Mô tả chi tiết:       Theo kế hoạch Sprint 14  |
+|  KH Thanh toán:        [X] (Billable to Client) |
+|  Ngày OT:              27/09/2021               |
+|  Thời gian:            17:30 - 24:00 (06:30)    |
+|  Phân loại:            Ngày làm việc (150%)     |
+|  Thời gian quy đổi:    09:45                    |
+|  Văn phòng:            TYTB                     |
+|                                                 |
+|  Ghi chú thẩm định PMO *                        |
+|  +-------------------------------------------+  |
+|  | PMO note: Đã kiểm tra đối soát budget HĐ  |  |
+|  | SOW đính kèm, xác nhận hợp lệ...          |  |
+|  +-------------------------------------------+  |
+|                                                 |
+|  +---------------------+ +--------------------+ |
+|  |       TỪ CHỐI       | |     PHÊ DUYỆT      | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet PMO (Màn 11):** `(o) Báo cáo OT`, `(o) Tải xuống xlsx`.
+
+### 3.4 Cấp 4: Màn hình CHRO Phê duyệt Overtime (Figma: Hàng 1 - Màn 12 & 13)
+Dành cho Giám đốc Khối Nhân sự (CHRO) phê duyệt các trường hợp làm thêm giờ vượt trần hoặc trường hợp khẩn cấp:
+```
++-------------------------------------------------+
+|  [Status Bar]                                   |
+|  [≡]         CHRO phê duyệt Overtime     [🔔 2] |
+|                                                 |
+|  [🔍 Search                                 [v] ]|
+|                                                 |
+|  CHRO Admin                          [ Action v ]|
+|                                                 |
+|  Dự án:                VMO ERP Mobile           |
+|  Tổng số giờ trong tháng: 46.5 giờ (Vượt trần) |
+|  Nguyên nhân:          Go-live hệ thống ERP     |
+|  DUL & PMO xác nhận:   Đã thẩm định             |
+|  Trạng thái:           [ Chờ CHRO duyệt ]       |
+|  +---------------------+ +--------------------+ |
+|  |       TỪ CHỐI       | |     PHÊ DUYỆT      | |
+|  +---------------------+ +--------------------+ |
+|                [Home Indicator]                 |
++-------------------------------------------------+
+```
+* **Action Bottom Sheet CHRO (Màn 13):** `(o) Báo cáo OT`, `(o) Tải xuống xlsx`.
 
 ---
 
-## 4. CHỨC NĂNG 4 & 5: BÁO CÁO OT & CẤU HÌNH LOẠI OT (`SCR_OT_004` & `SCR_OT_005`)
+## 4. CHỨC NĂNG 4 & 5: BÁO CÁO OT & CẤU HÌNH HỆ THỐNG OT (`SCR_OT_004` & `SCR_OT_005`)
 
 ### 4.1 Báo cáo tổng hợp số giờ OT (`SCR_OT_004`)
 
@@ -255,12 +369,29 @@ Khi Quản lý bấm nút `Action [v]`:
 +-------------------------------------------------+
 ```
 
-### 4.2 Cấu hình Hệ số lương OT & Danh mục lý do (`SCR_OT_005`)
-* Figma: `Cấu hình loại OT` & `Lý do OT`.
-* Cho phép Quản trị viên HR/C&B cấu hình:
-  * Tên loại OT: Ngày thường, Nghỉ hàng tuần, Lễ Tết.
-  * Hệ số lương: 1.5, 2.0, 3.0.
-  * Danh mục lý do OT: `Khách hàng yêu cầu gấp`, `Fix bug critical production`, `Triển khai Go-live hệ thống`, `Khối văn phòng kiểm kê cuối năm`.
+### 4.2 Cấu hình Hệ thống Quản trị OT (`SCR_OT_005`)
+
+#### 4.2.1 Màn hình Cấu hình loại OT & Hệ số lương (Figma: Hàng 2 - Màn 1 & 2)
+1. **Danh sách cấu hình loại OT (Màn 1):**
+   * `OT Ngày thường`: Hệ số 1.50 (150%) - Trạng thái: Đang áp dụng.
+   * `OT Cuối tuần`: Hệ số 2.00 (200%) - Trạng thái: Đang áp dụng.
+   * `OT Ngày Lễ Tết`: Hệ số 3.00 (300%) - Trạng thái: Đang áp dụng.
+   * `OT Ban đêm bổ sung`: Hệ số +0.30 (+30%) - Trạng thái: Đang áp dụng.
+   * Nút `[+ Thêm loại OT]`.
+2. **Form Chi tiết Chỉnh sửa Loại OT (Màn 2):**
+   * Tên loại OT: `OT Cuối tuần` (Text)
+   * Hệ số tính lương: `2.0` (Number)
+   * Phân loại ngày: `WEEKEND` (Dropdown)
+   * Trạng thái kích hoạt: `[X] Kích hoạt` (Switch/Checkbox)
+   * Nút `[ HỦY BỎ ]` và `[ LƯU CẤU HÌNH ]`.
+
+#### 4.2.2 Màn hình Danh mục Lý do OT (Figma: Hàng 2 - Màn 5)
+Bảng mã danh mục lý do phục vụ phân bổ chi phí dự án:
+* **`OT1 - Urgent Release`:** Khách hàng yêu cầu release gấp ngoài kế hoạch.
+* **`OT2 - Production Critical Bugfix`:** Sửa lỗi nghiêm trọng hệ thống vận hành.
+* **`OT3 - Low performance`:** Chậm tiến độ do năng suất nội bộ (Chi phí dự án tự chịu, không tính tiền khách hàng).
+* **`OT9 - In Plan`:** Làm thêm giờ nằm trong ngân sách kế hoạch dự án đã được phê duyệt từ đầu.
+* **`OT_BO - Backoffice Period Closing`:** Khối văn phòng khóa sổ cuối kỳ kế toán / kiểm kê tài sản.
 
 ---
 
